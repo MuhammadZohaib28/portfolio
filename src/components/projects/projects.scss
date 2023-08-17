@@ -1,0 +1,51 @@
+.projects {
+  background-color: aliceblue;
+  padding: 5rem 13rem;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .top {
+      h1 {
+      }
+      h2 {
+      }
+    }
+
+    .bottom {
+      .containerb {
+        // border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+        .leftb {
+          width: 500px; /* adjust the width as needed */
+          height: 350px; /* adjust the height as needed */
+          overflow-y: hidden;
+          //   border: 1px solid red;
+          border-radius: 1rem;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+          &:hover {
+            img {
+              transform: translateY(-50%);
+            }
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            transition: transform 4.3s ease; /* for smooth transition */
+          }
+        }
+      }
+    }
+  }
+}

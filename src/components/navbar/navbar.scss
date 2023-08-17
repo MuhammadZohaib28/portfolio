@@ -1,0 +1,158 @@
+.navbar {
+  // border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(248, 252, 255);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  &.active {
+    background-color: white;
+
+    color: black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .responsivemenuu {
+    border: 1px solid rgb(162, 162, 162);
+    position: absolute;
+    right: 0;
+    top: 5.5rem;
+    padding: 0.5rem 1rem;
+    width: 12rem;
+    border-radius: 0.2rem;
+    background-color: white;
+
+    hr {
+      width: 6.5rem;
+      height: 0.1rem;
+      background-color: gray;
+    }
+  }
+
+  .right {
+    .navitems {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      list-style: none;
+      gap: 0.5rem;
+
+      .navitem {
+        font-weight: 500;
+        font-size: 1.2rem;
+        // border: 1px solid red;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+          hr {
+            width: 10rem;
+          }
+        }
+
+        &:hover {
+          background-color: seagreen;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .responsivemenu {
+    .menu {
+      height: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  .left {
+    // border: 1px solid red;
+
+    img {
+      height: 5rem;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 456px) {
+  .navbar {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(248, 252, 255);
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+    &.active {
+      background-color: white;
+
+      color: black;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .responsivemenuu {
+      border: 1px solid red;
+      position: absolute;
+      right: 0;
+      top: -3rem;
+      width: 100%;
+      height: 100vh;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+      transform: translateY(3rem);
+      transition: all ease 1s;
+    }
+
+    .right {
+      .navitems {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        gap: 1.5rem;
+
+        .navitem {
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .responsivemenu {
+      border: 1px solid red;
+      z-index: 1;
+    }
+
+    .left {
+      // border: 1px solid red;
+      z-index: -1;
+
+      img {
+        height: 4rem;
+        object-fit: cover;
+
+        border: 1px solid red;
+      }
+    }
+  }
+}
