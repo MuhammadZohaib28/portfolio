@@ -1,16 +1,16 @@
-import location from "../../Images/map.png";
-import mail from "../../Images/mail.png";
-import whatsApp from "../../Images/whatsApp.png";
-import linkedIn from "../../Images/linkedIn.png";
-import facebook from "../../Images/facebook.png";
-import instagram from "../../Images/Instagram_logo_2016.svg.webp";
+import locationImage from "../../Images/map.png";
+import mailImage from "../../Images/mail.png";
+import whatsAppImage from "../../Images/whatsApp.png";
+import linkedInImage from "../../Images/linkedIn.png";
+import facebookImage from "../../Images/facebook.png";
+import instagramImage from "../../Images/Instagram_logo_2016.svg.webp";
 
 export const contactdata = [
   {
     id: 1,
     title: "Location",
     title2: "Karachi, Pakistan",
-    img: location,
+    img: locationImage,
     locationhover:true,
 
   },
@@ -18,19 +18,19 @@ export const contactdata = [
     id: 2,
     title: "Mail",
     title2: "zohaibsoomro0101@gmail.com",
-    img: mail,
+    img: mailImage,
   },
   {
     id: 3,
     title: "WhatsApp",
     title2: "0348 2469101",
-    img: whatsApp,
+    img: whatsAppImage,
   },
   {
     id: 4,
     title: "LinkedIn",
     title2: "Muhammad Zohaib",
-    img: linkedIn,
+    img: linkedInImage,
     link: "https://www.linkedin.com/in/muhammad-zohaib-b94280190/",
     hover:true
     
@@ -39,7 +39,7 @@ export const contactdata = [
     id: 5,
     title: "Facebook",
     title2: "Muhammad Zohaib Soomro",
-    img: facebook,
+    img: facebookImage,
     link: "https://www.facebook.com/dashinggzohaib.soomro/",
     hover:true
   },
@@ -47,7 +47,7 @@ export const contactdata = [
     id: 6,
     title: "Instagram",
     title2: "muhammadzohaibsoomroo",
-    img: instagram,
+    img: instagramImage,
     link: "https://www.instagram.com/muhammadzohaibsoomroo/",
     hover:true
   },
