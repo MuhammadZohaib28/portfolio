@@ -17,17 +17,19 @@ const Contact = () => {
             return (
               <div className="subbottom">
                 {item.locationhover && <span className="hoverspan" />}
-                <div className="left">
-                  <img src={item.img} />
-                </div>
-                <div className="right">
-                  <span>{item.title}</span>
-                  <a href={item.link} target="_blank" className="a">
+                <a href={item.link} target="_blank" className="a">
+                  <div className="left">
+                    <img src={item.img} />
+                  </div>
+                  <div className="right">
+                    <span>{item.title}</span>
+                    {/* <a href={item.link} target="_blank" className="a"> */}
                     <span className={item.hover == true ? "spanlast" : ""}>
                       {item.title2}
                     </span>
-                  </a>
-                </div>
+                    {/* </a> */}
+                  </div>
+                </a>
               </div>
             );
           })}

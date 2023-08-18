@@ -1,6 +1,6 @@
 .contact {
   padding: 5rem 13rem;
-//   border: 1px solid red;
+  //   border: 1px solid red;
 
   .container {
     // border: 1px solid red;
@@ -26,8 +26,16 @@
         border-radius: 0.4rem;
         padding: 0 0.2rem;
 
+        .a {
+          text-decoration: none;
+          // border: 1px solid red;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
         &:hover {
-            background-color: #f1f1f1;
+          background-color: #f1f1f1;
           .hoverspan::before {
             content: "A-1888, Phase-2, Gulshan-e-Hadeed";
             position: absolute;
@@ -119,7 +127,7 @@
         background-color: #000000;
 
         &:hover {
-            background-color: #171717;
+          background-color: #171717;
           .hoverspan::before {
             content: "A-1888, Phase-2, Gulshan-e-Hadeed";
             position: absolute;
@@ -157,7 +165,6 @@
             }
           }
         }
-
       }
     }
 
@@ -175,118 +182,127 @@
   }
 }
 
-@media (max-width:456px) {
-    .contact {
+@media (max-width: 456px) {
+  .contact {
+    // border: 1px solid red;
+    width: 100%;
+    padding: 5rem 0.5rem;
+
+    .container {
+      //   border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+
+      .bottom {
         // border: 1px solid red;
-        width: 100%;
-        padding: 5rem 0.5rem;
-      
-        .container {
-        //   border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        .subbottom {
+          //   border: 1px solid red;
+          width: 100%;
           display: flex;
           flex-direction: column;
-          gap: 4rem;
-      
-          .bottom {
+          gap: 1.5rem;
+          align-items: center;
+          background-color: #fafafa;
+          position: relative;
+          cursor: pointer;
+          border-radius: 0.4rem;
+          padding: 0 0.2rem;
+
+          .a {
+            text-decoration: none;
+            // border: 1px solid red;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+
+            gap: 2rem;
+          }
+
+          &:hover {
+            background-color: #f1f1f1;
+            .hoverspan::before {
+              content: "A-1888, Phase-2, Gulshan-e-Hadeed";
+              position: absolute;
+              height: 2rem;
+              width: 20rem;
+              top: -2.3rem;
+              left: 0;
+              background-color: seagreen;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 0.2rem;
+              font-weight: 600;
+              color: white;
+            }
+          }
+
+          .right {
             // border: 1px solid red;
             display: flex;
             flex-direction: column;
-            gap: 5rem;
-      
-            .subbottom {
-            //   border: 1px solid red;
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              gap: 1.5rem;
-              align-items: center;
-              background-color: #fafafa;
-              position: relative;
-              cursor: pointer;
-              border-radius: 0.4rem;
-              padding: 0 0.2rem;
-      
+            align-items: center;
+
+            span:first-child {
+              font-weight: 600;
+              font-size: 1.3rem;
+            }
+
+            span:last-child {
+              color: #5a5a5a;
+              font-weight: 500;
+              font-size: 1rem;
+
               &:hover {
-                  background-color: #f1f1f1;
-                .hoverspan::before {
-                  content: "A-1888, Phase-2, Gulshan-e-Hadeed";
-                  position: absolute;
-                  height: 2rem;
-                  width: 20rem;
-                  top: -2.3rem;
-                  left: 0;
-                  background-color: seagreen;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  border-radius: 0.2rem;
+                &.spanlast {
+                  background-color: #dcdcdc;
+                  padding: 0.15rem;
+                  border-radius: 0.1rem;
+                  color: rgb(40, 40, 40);
                   font-weight: 600;
-                  color: white;
-                }
-              }
-      
-              .right {
-                // border: 1px solid red;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-      
-                span:first-child {
-                  font-weight: 600;
-                  font-size: 1.3rem;
-                }
-      
-                span:last-child {
-                  color: #5a5a5a;
-                  font-weight: 500;
-                  font-size: 1rem;
-      
-                  &:hover {
-                    &.spanlast {
-                      background-color: #dcdcdc;
-                      padding: 0.15rem;
-                      border-radius: 0.1rem;
-                      color: rgb(40, 40, 40);
-                      font-weight: 600;
-                    }
-                  }
-                }
-                .a {
-                  text-decoration: none;
-                }
-              }
-      
-              .left {
-                // border: 1px solid red;
-                height: 4.5rem;
-                width: 4.5rem;
-                border-radius: 4rem;
-                background-color: whitesmoke;
-                padding: 0.3rem;
-                box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-      
-                img {
-                  height: 100%;
-                  width: 100%;
-                  object-fit: contain;
-                  border-radius: 4rem;
                 }
               }
             }
           }
-      
-          .top {
-            h1 {
-              font-size: 3rem;
-              color: seagreen;
-            }
-      
-            h2 {
-              color: #2d2e32;
-              font-size: 1.9rem;
+
+          .left {
+            // border: 1px solid red;
+            height: 4.5rem;
+            width: 4.5rem;
+            border-radius: 4rem;
+            background-color: whitesmoke;
+            padding: 0.3rem;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+              rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+              rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+              border-radius: 4rem;
             }
           }
         }
       }
-      
+
+      .top {
+        h1 {
+          font-size: 3rem;
+          color: seagreen;
+        }
+
+        h2 {
+          color: #2d2e32;
+          font-size: 1.9rem;
+        }
+      }
+    }
+  }
 }
