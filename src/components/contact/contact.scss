@@ -33,6 +33,10 @@
           align-items: center;
           gap: 1rem;
           color: #171717;
+
+          &:visited {
+            color: #171717;
+          }
         }
 
         &:hover {

@@ -103,7 +103,7 @@ const Navbar = (props) => {
               <li
                 className="navitem"
                 onClick={props.button}
-                onClick={closeMenu}
+               
               >
                 <ThemeMode />
               </li>
