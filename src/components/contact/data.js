@@ -1,6 +1,6 @@
 import locationImage from "../../Images/map.png";
 import mailImage from "../../Images/mail.png";
-import whatsAppImage from "../../Images/whatapp.png";
+import whatsAppImage from "../../Images/whatsapp.png";
 import linkedInImage from "../../Images/linkedIn.png";
 import facebookImage from "../../Images/facebook.png";
 import instagramImage from "../../Images/Instagram_logo_2016.svg.webp";
