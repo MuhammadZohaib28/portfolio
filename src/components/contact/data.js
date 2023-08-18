@@ -1,6 +1,6 @@
 import location from "../../Images/map.png";
 import mail from "../../Images/mail.png";
-import whatsApp from "../../Images/whatsApp.png";
+// import whatsApp from "../../Images/whatsApp.png";
 import linkedIn from "../../Images/linkedIn.png";
 import facebook from "../../Images/facebook.png";
 import instagram from "../../Images/Instagram_logo_2016.svg.webp";
@@ -24,7 +24,7 @@ export const contactdata = [
     id: 3,
     title: "WhatsApp",
     title2: "0348 2469101",
-    img: whatsApp,
+    // img: whatsApp,
   },
   {
     id: 4,
