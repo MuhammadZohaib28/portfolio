@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 import logo from "../../Images/logo.png";
@@ -60,7 +59,8 @@ const Navbar = (props) => {
                 >
                   Home
                 </Link>
-              </li> <hr />
+              </li>{" "}
+              <hr />
               <li className="navitem">
                 <Link
                   to="aboutme"
@@ -72,7 +72,8 @@ const Navbar = (props) => {
                 >
                   About
                 </Link>
-              </li> <hr />
+              </li>{" "}
+              <hr />
               <li className="navitem">
                 <Link
                   to="projects"
@@ -84,7 +85,8 @@ const Navbar = (props) => {
                 >
                   Projects
                 </Link>
-              </li> <hr />
+              </li>{" "}
+              <hr />
               <li className="navitem">
                 <Link
                   to="contact"
@@ -96,8 +98,13 @@ const Navbar = (props) => {
                 >
                   Contact
                 </Link>
-              </li> <hr />
-              <li className="navitem" onClick={props.button}>
+              </li>{" "}
+              <hr />
+              <li
+                className="navitem"
+                onClick={props.button}
+                onClick={closeMenu}
+              >
                 <ThemeMode />
               </li>
             </ul>
