@@ -9,7 +9,7 @@ const ThemeMode = () => {
       className="themetogglebtn"
       onClick={toggle}
       style={
-        mode === "dark"
+        mode === "light"
           ? { border: "2px solid black" }
           : { border: "2px solid white" }
       }

@@ -4,11 +4,11 @@ import logo from "../../Images/logo.png";
 import bars from "../../Images/bars.png";
 import close from "../../Images/close.png";
 import ThemeMode from "../thememode/ThemeMode";
+import { Link } from "react-scroll";
 
 const Navbar = (props) => {
   const [active, setActive] = useState(false);
   const [click, setClick] = useState(false);
-  const [responsivenavbar, setResponsivenavbar] = useState(false);
 
   const handleClick = () => {
     setClick(!click);
@@ -43,27 +43,61 @@ const Navbar = (props) => {
         <div className="responsivemenuu">
           <div className="right">
             <ul className="navitems">
-              <li className="navitem">Home</li> <hr />
-              <li className="navitem">About</li> <hr />
-              <li className="navitem">Projects</li> <hr />
-              <li className="navitem">Contact</li> <hr />
-              <li className="navitem" onClick={props.button}><ThemeMode /></li>
+              <li className="navitem" >
+                <Link
+                  to="navbar"
+                  spy={true}
+                  smooth={true}
+                  offset={-11170}
+                  duration={20}
+                >
+                  Home
+                </Link>
+              </li>{" "}
+              <hr />
+              <li className="navitem">
+                <Link
+                  to="aboutme"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={20}
+                >
+                  About
+                </Link>
+              </li>{" "}
+              <hr />
+              <li className="navitem">
+                <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={20}
+                >
+                  Projects
+                </Link>
+              </li>{" "}
+              <hr />
+              <li className="navitem">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={20}
+                >
+                  Contact
+                </Link>
+              </li>{" "}
+              <hr />
+              <li className="navitem" onClick={props.button}>
+                <ThemeMode />
+              </li>
             </ul>
           </div>
         </div>
       )}
-
-      {/* {responsivenavbar && (
-        <div className="right">
-          <ul className="navitems">
-            <li className="navitem">Home</li>
-            <li className="navitem">About</li>
-            <li className="navitem">Projects</li>
-            <li className="navitem">Contact</li>
-            <li className="navitem">DarkMode</li>
-          </ul>
-        </div>
-      )} */}
     </nav>
   );
 };
