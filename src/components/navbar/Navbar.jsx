@@ -31,14 +31,14 @@ const Navbar = () => {
       </div>
 
       <div className="responsivemenu" onClick={handleClick}>
-        {click ? (
+        {!click ? (
           <img src={bars} alt="" className="menu" />
         ) : (
           <img src={close} alt="" className="menu" />
         )}
       </div>
 
-      {!click && (
+      {click && (
         <div className="responsivemenuu">
           <div className="right">
             <ul className="navitems">
@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
       )}
 
-      {responsivenavbar && (
+      {/* {responsivenavbar && (
         <div className="right">
           <ul className="navitems">
             <li className="navitem">Home</li>
@@ -62,7 +62,7 @@ const Navbar = () => {
             <li className="navitem">DarkMode</li>
           </ul>
         </div>
-      )}
+      )} */}
     </nav>
   );
 };

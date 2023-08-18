@@ -26,7 +26,7 @@ const Aboutme = () => {
               <span className="pspan">JavaScript</span>,{" "}
               <span className="pspan">ReactJS</span>,{" "}
               <span className="pspan">Tailwind</span>, and{" "}
-              <span className="pspan">scss/SASS</span>. I excel in designing and
+              <span className="pspan">SCSS/SASS</span>. I excel in designing and
               maintaining <span className="pspan">responsive websites</span>{" "}
               that offer a smooth user experience. My expertise lies in crafting
               <span className="pspan">dynamic</span>, engaging interfaces

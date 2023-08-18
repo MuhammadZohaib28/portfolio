@@ -1,10 +1,40 @@
-import React from 'react'
-import './contact.scss'
+import React from "react";
+import "./contact.scss";
+import map from "../../Images/map.png";
+import { contactdata } from "./data";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div className="contact">
+      <div className="container">
+        <div className="top">
+          <h1>Contact</h1>
+          <h2>Don't be shy! Hit me up! 👇</h2>
+        </div>
 
-export default Contact
+        <div className="bottom">
+          {contactdata.map((item) => {
+            return (
+              <div className="subbottom">
+                {item.locationhover && <span className="hoverspan" />}
+                <div className="left">
+                  <img src={item.img} />
+                </div>
+                <div className="right">
+                  <span>{item.title}</span>
+                  <a href={item.link} target="_blank" className="a">
+                    <span className={item.hover == true ? "spanlast" : ""}>
+                      {item.title2}
+                    </span>
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
