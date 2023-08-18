@@ -54,7 +54,6 @@
 
 #dark .aboutme {
   .container {
-
     .right {
       .top {
         h1 {
@@ -144,16 +143,15 @@
       }
 
       .left {
-        border: 1px solid red;
+        // border: 1px solid red;
         height: 300px;
         width: 340px;
 
         img {
-          
           height: 100%;
           width: 100%;
           object-fit: contain;
-            border: 1px solid rgb(171, 171, 171);
+          // border: 1px solid rgb(171, 171, 171);
           filter: contrast(20rem);
         }
       }
