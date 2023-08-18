@@ -331,7 +331,6 @@
             // border: 1px solid red;
             margin: 4rem auto;
             z-index: 999;
-            
 
             img {
               height: 2.5rem;
@@ -341,7 +340,324 @@
               transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
               z-index: 999;
               display: inline-block;
-              
+
+              @keyframes wave-animation {
+                0% {
+                  transform: rotate(0deg);
+                }
+                10% {
+                  transform: rotate(14deg);
+                } /* The following five values can be played with to make the waving more or less extreme */
+                20% {
+                  transform: rotate(-8deg);
+                }
+                30% {
+                  transform: rotate(14deg);
+                }
+                40% {
+                  transform: rotate(-4deg);
+                }
+                50% {
+                  transform: rotate(10deg);
+                }
+                60% {
+                  transform: rotate(0deg);
+                } /* Reset for the last half to pause */
+                100% {
+                  transform: rotate(0deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        border: 2px solid black;
+        border-radius: 70% 30% 44% 56% / 47% 47% 53% 53%;
+        background-color: #f8fff7;
+        height: 14rem;
+        // margin-top: 1rem;
+        animation: morph 15s ease-in-out infinite;
+        transition: all 0.4s ease-in-out;
+        z-index: 50;
+        img {
+          border: 3px solid black;
+          height: 14rem;
+          border-radius: 70% 30% 44% 56% / 47% 47% 53% 53%;
+          filter: contrast(140%) saturate(90%);
+          animation: morph 15s ease-in-out infinite;
+          transition: all 0.4s ease-in-out;
+          z-index: 50;
+
+          @keyframes morph {
+            0% {
+              border-radius: 42% 58% 59% 41% / 42% 41% 59% 58%;
+            }
+
+            10% {
+              border-radius: 33% 67% 59% 41% / 51% 34% 66% 49%;
+            }
+
+            20% {
+              border-radius: 33% 67% 46% 54% / 65% 45% 55% 35%;
+            }
+
+            30% {
+              border-radius: 47% 53% 32% 68% / 59% 34% 66% 41%;
+            }
+
+            40% {
+              border-radius: 60% 40% 40% 60% / 44% 50% 50% 56%;
+            }
+
+            50% {
+              border-radius: 73% 27% 73% 27% / 29% 63% 37% 71%;
+            }
+
+            60% {
+              border-radius: 50% 50% 57% 43% / 41% 40% 60% 59%;
+            }
+
+            70% {
+              border-radius: 27% 73% 32% 68% / 58% 24% 76% 42%;
+            }
+
+            80% {
+              border-radius: 40% 60% 28% 72% / 49% 45% 55% 51%;
+            }
+
+            90% {
+              border-radius: 59% 41% 47% 53% / 61% 58% 42% 39%;
+            }
+
+            100% {
+              border-radius: 44% 56% 56% 44% / 39% 50% 50% 61%;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom {
+      // border: 1px solid red;
+      width: 100%;
+      display: flex;
+      // justify-content: space-between;
+      gap: 6rem;
+      align-items: center;
+
+      .right {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        align-items: center;
+        // border: 1px solid red;
+
+        .container {
+          height: 4rem;
+          width: 4rem;
+          background-color: rgb(255, 255, 255);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100rem;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+          &:hover {
+            cursor: pointer;
+            animation: myAnim 2s ease 0s 1 normal forwards;
+
+            @keyframes myAnim {
+              0%,
+              50%,
+              100% {
+                opacity: 1;
+              }
+
+              25%,
+              75% {
+                opacity: 0.7;
+              }
+            }
+          }
+
+          img {
+            height: 80%;
+            width: 80%;
+            object-fit: contain;
+            border-radius: 100rem;
+          }
+        }
+      }
+
+      .left {
+        // border: 1px solid red;
+        text-align: center;
+        border-radius: 0.4rem;
+        position: relative;
+
+        span {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+
+        .borderright {
+          position: absolute;
+          width: 0.2rem;
+          height: 6rem;
+          background-color: rgb(176, 176, 176);
+          left: 8rem;
+          top: -1.3rem;
+          border-radius: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+#dark .hero {
+  background-color: rgb(0, 0, 0);
+
+  .top {
+    .left {
+      .socialmedia {
+        .lastchild {
+          height: 2.4rem;
+          background-color: #f8fff7;
+          border-radius: 45rem;
+          padding: 0.2rem;
+        }
+      }
+
+      .desc {
+        color: #f8fff7;
+
+        p {
+          .name {
+            background-color: rgb(255, 255, 255);
+            color: black;
+          }
+        }
+      }
+
+      .designation {
+        h1 {
+          color: #f8fff7;
+        }
+      }
+    }
+
+    .right {
+      border: 2px solid rgb(255, 255, 255);
+      background-color: #2f2f2f;
+      img {
+        border: 3px solid rgb(255, 255, 255);
+      }
+    }
+  }
+
+  .bottom {
+    // border: 1px solid red;
+
+    .left {
+      span {
+        color: #f8fff7;
+      }
+
+      .borderright {
+        background-color: rgb(228, 228, 228);
+      }
+    }
+  }
+}
+
+@media (max-width: 456px) {
+  .hero {
+    // border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 5rem 0.5rem;
+    height: 100%;
+    background-color: rgb(248, 252, 255);
+
+    .top {
+      display: flex;
+      flex-direction: column-reverse;
+
+      gap: 5rem;
+      width: 100%;
+      margin: 0 auto;
+      align-items: center;
+      // border: 1px solid red;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        // border: 1px solid red;
+        width: 100%;
+
+        .socialmedia {
+          // border: 1px solid red;
+          width: 50%;
+          display: flex;
+          // justify-content: space-between;
+          gap: 0.4rem;
+          align-items: center;
+          // margin-left: -1rem;
+
+          .firstchild {
+            height: 3rem;
+          }
+
+          .lastchild {
+            height: 2.3rem;
+          }
+        }
+
+        .desc {
+          // border: 1px solid red;
+          p {
+            font-size: 1.2rem;
+            font-weight: 300;
+
+            .name {
+              // border: 1px solid red;
+              border-radius: 0.2rem;
+              padding: 0.15rem 0.5rem;
+              background-color: rgb(46, 46, 46);
+              font-weight: 600;
+              color: white;
+            }
+          }
+        }
+
+        .designation {
+          // border: 1px solid red;
+
+          h1 {
+            color: #2d2e32;
+            font-size: 2.8rem;
+            line-height: 3rem;
+          }
+
+          span {
+            // border: 1px solid red;
+            margin: 4rem auto;
+            z-index: 999;
+
+            img {
+              height: 2.5rem;
+              animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+              animation-duration: 2.5s; /* Change to speed up or slow down */
+              animation-iteration-count: infinite; /* Never stop waving :) */
+              transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+              z-index: 999;
+              display: inline-block;
 
               @keyframes wave-animation {
                 0% {

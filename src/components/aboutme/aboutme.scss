@@ -21,14 +21,56 @@
 
       .mid {
         h2 {
-            color: #2d2e32;
-            font-size: 1.9rem;
+          color: #2d2e32;
+          font-size: 1.9rem;
         }
       }
 
       .bottom {
         p {
           color: rgb(99, 99, 99);
+          font-size: 1.1rem;
+          line-height: 1.9rem;
+
+          .pspan {
+            color: rgb(255, 255, 255);
+            background-color: seagreen;
+            padding: 0.1rem 0.2rem;
+            border-radius: 0.1rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .left {
+      img {
+        height: 20rem;
+        // border: 1px solid red;
+      }
+    }
+  }
+}
+
+#dark .aboutme {
+  .container {
+
+    .right {
+      .top {
+        h1 {
+          color: seagreen;
+        }
+      }
+
+      .mid {
+        h2 {
+          color: whitesmoke;
+        }
+      }
+
+      .bottom {
+        p {
+          color: rgb(238, 238, 238);
           font-size: 1.1rem;
           line-height: 1.9rem;
 
@@ -104,9 +146,8 @@
       .left {
         img {
           height: 15rem;
-        //   border: 1px solid rgb(171, 171, 171);
+          //   border: 1px solid rgb(171, 171, 171);
           filter: contrast(20rem);
-          
         }
       }
     }

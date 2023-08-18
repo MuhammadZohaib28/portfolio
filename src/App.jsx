@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 import Herosection from "./components/herosection/Herosection";
 import Aboutme from "./components/aboutme/Aboutme";
@@ -9,9 +9,15 @@ import './App.css'
 
 
 const App = () => {
+
+  const [theme, setTheme] = useState("dark");
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
   return (
-    <div className="app">
-      <Navbar />
+    <div className="app"  id={theme}>
+      <Navbar button={toggleTheme} name={theme}/>
       <Herosection />
       <Aboutme />
       <Projects />

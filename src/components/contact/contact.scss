@@ -107,6 +107,74 @@
   }
 }
 
+#dark .contact {
+  .container {
+    // border: 1px solid red;
+
+    .bottom {
+      // border: 1px solid red;
+
+      .subbottom {
+        // border: 1px solid red;
+        background-color: #000000;
+
+        &:hover {
+            background-color: #171717;
+          .hoverspan::before {
+            content: "A-1888, Phase-2, Gulshan-e-Hadeed";
+            position: absolute;
+            height: 2rem;
+            width: 20rem;
+            top: -2.3rem;
+            background-color: seagreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.2rem;
+            font-weight: 600;
+            color: white;
+          }
+        }
+
+        .right {
+          // border: 1px solid red;
+          display: flex;
+          flex-direction: column;
+          // align-items: center;
+
+          span:first-child {
+            color: whitesmoke;
+          }
+
+          span:last-child {
+            color: #cacaca;
+
+            &:hover {
+              &.spanlast {
+                background-color: #dcdcdc;
+                color: rgb(40, 40, 40);
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .top {
+      h1 {
+        font-size: 3rem;
+        color: seagreen;
+      }
+
+      h2 {
+        color: whitesmoke;
+        font-size: 1.9rem;
+      }
+    }
+  }
+}
+
 @media (max-width:456px) {
     .contact {
         // border: 1px solid red;

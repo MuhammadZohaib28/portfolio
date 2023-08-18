@@ -169,6 +169,82 @@
   }
 }
 
+#dark .projects {
+  background-color: rgb(0, 0, 0);
+  .container {
+    .top {
+      h2 {
+        color: whitesmoke;
+        font-size: 1.9rem;
+      }
+    }
+
+    .bottom {
+      .containerb {
+        background-color: rgb(13, 13, 13);
+        box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px,
+          rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
+
+        .rightb {
+          // border: 1px solid red;
+
+          .midb {
+            // border: 1px solid red;
+
+            p {
+              text-align: center;
+              color: rgb(242, 242, 242);
+              font-size: 1.1rem;
+            }
+
+            .midbtn {
+              // border: 1px solid red;
+
+              span:first-child {
+                // border: 1px solid red;
+              }
+
+              span:last-child {
+                // border: 1px solid red;
+              }
+            }
+          }
+
+          .topr {
+            color: whitesmoke;
+          }
+        }
+
+        .leftb {
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+          img {
+            width: 100%;
+            height: auto;
+            transition: transform 4.3s ease; /* for smooth transition */
+          }
+        }
+      }
+
+      .bottomb {
+        // border: 1px solid red;
+
+        .rightbb {
+          background-color: rgb(255, 255, 255);
+          color: rgb(28, 28, 28);
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+      }
+
+      .leftbb {
+        background-color: white;
+        color: rgb(28, 28, 28);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    }
+  }
+}
+
 @media (max-width: 456px) {
   .projects {
     // border: 1px solid red;
@@ -177,9 +253,6 @@
 
     .container {
       // border: 1px solid red;
-
-
-      
 
       .top {
         // border: 1px solid red;
@@ -211,15 +284,13 @@
           border-radius: 0.8rem;
           box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
             rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-          margin-bottom: 3rem;  
+          margin-bottom: 3rem;
 
-
-            &.containerbrow {
-              display: flex;
-              // justify-content: space-between;
-              flex-direction: column;
-            }
-            
+          &.containerbrow {
+            display: flex;
+            // justify-content: space-between;
+            flex-direction: column;
+          }
 
           .rightb {
             // border: 1px solid red;

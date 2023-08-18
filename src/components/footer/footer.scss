@@ -31,6 +31,26 @@ footer {
   }
 }
 
+#dark footer {
+  background-color: rgb(0, 0, 0);
+
+  .right {
+    span {
+      color: rgb(168, 168, 168);
+    }
+  }
+
+  .left {
+    img {
+      filter: grayscale(2);
+    }
+
+    span {
+      color: rgb(168, 168, 168);
+    }
+  }
+}
+
 @media (max-width: 456px) {
   footer {
     display: flex;
@@ -40,10 +60,10 @@ footer {
     align-items: center;
 
     .right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       span {
         font-size: 1.1rem;
         color: rgb(132, 132, 132);

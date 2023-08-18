@@ -3,8 +3,9 @@ import "./navbar.scss";
 import logo from "../../Images/logo.png";
 import bars from "../../Images/bars.png";
 import close from "../../Images/close.png";
+import ThemeMode from "../thememode/ThemeMode";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [active, setActive] = useState(false);
   const [click, setClick] = useState(false);
   const [responsivenavbar, setResponsivenavbar] = useState(false);
@@ -46,7 +47,7 @@ const Navbar = () => {
               <li className="navitem">About</li> <hr />
               <li className="navitem">Projects</li> <hr />
               <li className="navitem">Contact</li> <hr />
-              <li className="navitem">DarkMode</li>
+              <li className="navitem" onClick={props.button}><ThemeMode /></li>
             </ul>
           </div>
         </div>
