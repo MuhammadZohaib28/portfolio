@@ -90,3 +90,39 @@ footer {
     }
   }
 }
+
+
+@media (max-width: 1024px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    align-items: center;
+    // border: 1px solid red;
+  
+    .right {
+      span {
+        font-size: 0.8rem;
+        color: rgb(132, 132, 132);
+      }
+    }
+  
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // border: 1px solid red;
+      gap: 1rem;
+  
+      img {
+        height: 3rem;
+        filter: grayscale(1);
+      }
+  
+      span {
+        font-size: 0.8rem;
+        color: rgb(132, 132, 132);
+      }
+    }
+  }
+}

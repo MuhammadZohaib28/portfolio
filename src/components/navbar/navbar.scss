@@ -125,6 +125,111 @@
   }
 }
 
+
+
+
+
+
+// 13 INCHES MONITOR
+
+@media (max-width: 1025px) {
+  .navbar {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(248, 252, 255);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  
+    &.active {
+      background-color: white;
+  
+      color: black;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  
+    .responsivemenuu {
+      border: 1px solid rgb(162, 162, 162);
+      position: absolute;
+      right: 0;
+      top: 5.5rem;
+      padding: 0.5rem 1rem;
+      width: 32rem;
+      border-radius: 0.2rem;
+      background-color: white;
+      // border: 1px solid red;
+      height: 4rem;
+    }
+  
+    .right {
+      .navitems {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+        gap: 0.5rem;
+  
+        .navitem {
+          font-weight: 500;
+          font-size: 1.2rem;
+          // border: 1px solid red;
+          padding: 0.2rem 0.5rem;
+          border-radius: 0.3rem;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+  
+          &:hover {
+            hr {
+              width: 10rem;
+            }
+          }
+  
+          &:hover {
+            background-color: seagreen;
+            color: white;
+          }
+        }
+      }
+    }
+  
+    .responsivemenu {
+      .menu {
+        height: 2rem;
+        cursor: pointer;
+      }
+    }
+  
+    .left {
+      // border: 1px solid red;
+  
+      img {
+        height: 5rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// MOBILE RESPONSIVENESS
+
 @media (max-width: 456px) {
   .navbar {
     // border: 1px solid red;

@@ -26,7 +26,9 @@ const Projects = () => {
               >
                 <div className="leftb">
                   <img src={item.projectpicture} alt="" />
-                  <div class="overlay"><span>Hover here</span></div>
+                  <div class="overlay">
+                    <span>Hover here</span>
+                  </div>
                 </div>
                 <div className="rightb">
                   <div className="topr">
@@ -52,7 +54,7 @@ const Projects = () => {
                         {item.livedemo ? (
                           <span>Live demo</span>
                         ) : (
-                          <span>Not Avaialble</span>
+                          <h3>Not Avaialble</h3>
                         )}
 
                         <img src={live} alt="" className="imglive" />
