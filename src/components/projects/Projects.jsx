@@ -26,6 +26,7 @@ const Projects = () => {
               >
                 <div className="leftb">
                   <img src={item.projectpicture} alt="" />
+                  <div class="overlay"><span>Hover here</span></div>
                 </div>
                 <div className="rightb">
                   <div className="topr">
@@ -48,8 +49,13 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className="rightbb"
                       >
-                        <span>Live demo</span>
-                        <img src={live} alt="" className="imglive"/>
+                        {item.livedemo ? (
+                          <span>Live demo</span>
+                        ) : (
+                          <span>Not Avaialble</span>
+                        )}
+
+                        <img src={live} alt="" className="imglive" />
                       </a>
                     </div>
                     <div className="btnss">
