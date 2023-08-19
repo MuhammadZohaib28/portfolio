@@ -15,7 +15,7 @@ const Contact = () => {
         <div className="bottom">
           {contactdata.map((item) => {
             return (
-              <div className="subbottom">
+              <div className="subbottom" key={item.id}>
                 {item.locationhover && <span className="hoverspan" />}
                 <a
                   href={item.link}

@@ -251,7 +251,7 @@
     }
 
     .responsivemenuu {
-      // border: 1px solid red;
+      border: 1px solid red;
       position: absolute;
       right: 0;
       top: -3rem;
@@ -272,6 +272,7 @@
         justify-content: space-around;
         align-items: center;
         list-style: none;
+        flex-direction: column;
         gap: 1.5rem;
 
         .navitem {
