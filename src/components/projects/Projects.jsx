@@ -41,18 +41,18 @@ const Projects = () => {
                   </div>
 
                   <div className="bottomb">
-                    <div >
+                    <div className="btns">
                       <a
                         href={item.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="leftbb"
+                        className="rightbb"
                       >
                         <span>Live demo</span>
-                        <img src={live} alt="" />
+                        <img src={live} alt="" className="imglive"/>
                       </a>
                     </div>
-                    <div >
+                    <div className="btnss">
                       <a
                         href={item.code}
                         target="_blank"

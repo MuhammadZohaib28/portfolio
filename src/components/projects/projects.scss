@@ -131,6 +131,33 @@
         align-items: center;
         gap: 1rem;
 
+        .btns {
+          background-color: seagreen;
+          height: 3.1rem;
+          border-radius: 0.3rem;
+          box-shadow: none;
+          border: 1.8px solid seagreen;
+
+          &:hover {
+            background-color: rgb(255, 255, 255);
+            transition: 0.4s all ease;
+            box-shadow: none;
+          }
+        }
+
+        .btnss {
+          background-color: seagreen;
+          height: 3.32rem;
+          border-radius: 0.3rem;
+          box-shadow: none;
+          border: 1.8px solid seagreen;
+
+          &:hover {
+            background-color: rgb(255, 255, 255);
+            transition: 0.4s all ease;
+            box-shadow: none;
+          }
+        }
         .rightbb {
           display: flex;
           justify-content: center;
@@ -141,28 +168,15 @@
           color: rgb(28, 28, 28);
           border-radius: 0.2rem;
           gap: 1rem;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           text-decoration: none;
+        }
+
+        .imglive {
+          height: 1.8rem;
         }
 
         img {
           height: 2rem;
-        }
-      }
-
-      .leftbb {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0.65rem 1rem;
-        font-weight: 600;
-        border-radius: 0.2rem;
-        gap: 1rem;
-        color: rgb(28, 28, 28);
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        text-decoration: none;
-        img {
-          height: 1.5rem;
         }
       }
     }
@@ -232,14 +246,14 @@
         .rightbb {
           background-color: rgb(255, 255, 255);
           color: rgb(28, 28, 28);
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
       }
 
       .leftbb {
         background-color: white;
         color: rgb(28, 28, 28);
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       }
     }
   }
@@ -379,6 +393,33 @@
           align-items: center;
           gap: 1rem;
 
+          .btns {
+            background-color: seagreen;
+            height: 3.1rem;
+            border-radius: 0.3rem;
+            box-shadow: none;
+            border: 1.8px solid seagreen;
+
+            &:hover {
+              background-color: rgb(255, 255, 255);
+              transition: 0.4s all ease;
+              box-shadow: none;
+            }
+          }
+
+          .btnss {
+            background-color: seagreen;
+            height: 3.32rem;
+            border-radius: 0.3rem;
+            box-shadow: none;
+            border: 1.8px solid seagreen;
+
+            &:hover {
+              background-color: rgb(255, 255, 255);
+              transition: 0.4s all ease;
+              box-shadow: none;
+            }
+          }
           .rightbb {
             display: flex;
             justify-content: center;
@@ -387,28 +428,17 @@
             padding: 0.4rem 0.7rem;
             font-weight: 600;
             color: rgb(28, 28, 28);
-            border-radius: 0.4rem;
+            border-radius: 0.2rem;
             gap: 1rem;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            text-decoration: none;
+          }
+
+          .imglive {
+            height: 1.8rem;
           }
 
           img {
             height: 2rem;
-          }
-        }
-
-        .leftbb {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 0.65rem 1rem;
-          font-weight: 600;
-          border-radius: 0.2rem;
-          gap: 1rem;
-          color: rgb(28, 28, 28);
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          img {
-            height: 1.5rem;
           }
         }
       }

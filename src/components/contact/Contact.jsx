@@ -4,8 +4,6 @@ import map from "../../Images/map.png";
 import { contactdata } from "./data";
 
 const Contact = () => {
-
-
   return (
     <div className="contact">
       <div className="container">
@@ -19,7 +17,12 @@ const Contact = () => {
             return (
               <div className="subbottom">
                 {item.locationhover && <span className="hoverspan" />}
-                <a href={item.link} target="_blank" className="a" onClick={item.click}>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  className="a"
+                  onClick={item.click}
+                >
                   <div className="left">
                     <img src={item.img} />
                   </div>
