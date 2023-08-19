@@ -121,6 +121,7 @@
       animation: morph 15s ease-in-out infinite;
       transition: all 0.4s ease-in-out;
       z-index: 5;
+      
       img {
         border: 3px solid black;
         height: 18rem;
@@ -633,7 +634,7 @@
 
     .right {
       border: 2px solid rgb(255, 255, 255);
-      background-color: #2f2f2f;
+      background-color: #181818;
       img {
         border: 3px solid rgb(255, 255, 255);
       }
