@@ -202,6 +202,14 @@
           border-radius: 0.2rem;
           gap: 1rem;
           text-decoration: none;
+
+
+          h3{
+            // border: 1px solid red;
+            cursor: not-allowed;
+            font-weight: 550;
+            font-size: 1rem;
+          }
         }
 
         .imglive {
@@ -690,6 +698,7 @@
               // border: 1px solid red;
               font-weight: 600;
               font-size: 0.91rem;
+              
             }
           }
 
