@@ -26,7 +26,7 @@ const Projects = () => {
               >
                 <div className="leftb">
                   <img src={item.projectpicture} alt="" />
-                  <div class="overlay">
+                  <div className="overlay">
                     <span>Hover here</span>
                   </div>
                 </div>
