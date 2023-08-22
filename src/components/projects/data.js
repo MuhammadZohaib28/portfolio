@@ -3,6 +3,7 @@ import project2 from "../../Images/fiverrproject.png";
 import project3 from "../../Images/cryptoo.png";
 import project4 from "../../Images/funnyexcusee.png";
 import project5 from "../../Images/teenziapparal.png";
+import project6 from "../../Images/country.png";
 
 export const projectdata = [
   {
@@ -66,5 +67,18 @@ export const projectdata = [
     rowreverse: false,
     code: "https://github.com/MuhammadZohaib28/Clothing-Store-Frontend",
     livedemo: false,
+  },
+  {
+    id: 6,
+    projectpicture: project6,
+    projectname: "Know your country. 🌎",
+    projectdesc:
+      "This is the REST API Project. This is a practice purpose only frontend part. I have worked on this website using ReactJS and applied the best practices using ReactJS.",
+    projectlanguage1: "ReactJS",
+    projectlanguage2: "REST API",
+    rowreverse: true,
+    code: "https://github.com/MuhammadZohaib28/CountryRestApi",
+    livedemo: true,
+    live: "https://countrydata-smoky.vercel.app/",
   },
 ];

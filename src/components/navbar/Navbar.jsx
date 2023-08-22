@@ -100,11 +100,7 @@ const Navbar = (props) => {
                 </Link>
               </li>{" "}
               <hr />
-              <li
-                className="navitem"
-                onClick={props.button}
-               
-              >
+              <li className="navitem" onClick={props.button}>
                 <ThemeMode />
               </li>
             </ul>
