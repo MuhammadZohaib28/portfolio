@@ -169,6 +169,25 @@
   }
 }
 
+@media (max-width: 1230px) {
+  .aboutme {
+    // border: 1px solid red;
+
+    padding: 6rem 4rem;
+    .container {
+      // border: 1px solid red;
+
+      .right {
+        .bottom {
+          p {
+            font-size: 0.95rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .aboutme {
     // border: 1px solid red;

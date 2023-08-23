@@ -216,20 +216,20 @@
     background-color: white;
     transition: all ease 1s;
     transition: all ease 1.5s;
-      // border: 1px solid red;
-  
+    // border: 1px solid red;
+
     .container {
       // border: 1px solid red;
       display: flex;
       flex-direction: column;
       gap: 2rem;
-  
+
       .bottom {
         // border: 1px solid red;
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
-  
+
         .subbottom {
           // border: 1px solid red;
           width: 31%;
@@ -242,7 +242,7 @@
           border-radius: 0.4rem;
           padding: 0.4rem 0.2rem;
           transition: all ease 1.5s;
-  
+
           .a {
             text-decoration: none;
             // border: 1px solid red;
@@ -251,13 +251,13 @@
             gap: 1rem;
             color: #171717;
             transition: all ease 1.5s;
-  
+
             &:visited {
               color: #171717;
               transition: all ease 1.5s;
             }
           }
-  
+
           &:hover {
             background-color: #f1f1f1;
             transition: all ease 1.5s;
@@ -277,24 +277,24 @@
               transition: all ease 1.5s;
             }
           }
-  
+
           .right {
             // border: 1px solid red;
             display: flex;
             flex-direction: column;
             // align-items: center;
-  
+
             span:first-child {
               font-weight: 600;
               font-size: 1.3rem;
             }
-  
+
             span:last-child {
               color: #5a5a5a;
               font-weight: 500;
               font-size: 1rem;
               transition: all ease 1.5s;
-  
+
               &:hover {
                 &.spanlast {
                   background-color: #dcdcdc;
@@ -310,7 +310,7 @@
               text-decoration: none;
             }
           }
-  
+
           .left {
             // border: 1px solid red;
             height: 4.1rem;
@@ -318,7 +318,7 @@
             border-radius: 4rem;
             // background-color: whitesmoke;
             // padding: 0.5rem;
-  
+
             img {
               height: 100%;
               width: 100%;
@@ -328,14 +328,14 @@
           }
         }
       }
-  
+
       .top {
         h1 {
           font-size: 3rem;
           color: seagreen;
           transition: all ease 1.5s;
         }
-  
+
         h2 {
           color: #2d2e32;
           font-size: 1.9rem;
@@ -343,6 +343,13 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1230px) {
+  .contact {
+    padding: 8rem 4rem;
+    // border: 1px solid red;
   }
 }
 
