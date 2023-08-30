@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./projects.scss";
 import project1 from "../../Images/sc.png";
 import github from "../../Images/github.png";
@@ -6,6 +6,25 @@ import live from "../../Images/live.png";
 import { projectdata } from "./data";
 
 const Projects = () => {
+  const [touch, setTouch] = useState(false);
+
+  useEffect(() => {
+    updateTouchState(); // Initial check
+    window.addEventListener("resize", updateTouchState);
+
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener("resize", updateTouchState);
+    };
+  }, []);
+
+  const updateTouchState = () => {
+    if (window.innerWidth <= 456) {
+      setTouch(true);
+    } else {
+      setTouch(false);
+    }
+  };
   return (
     <div className="projects">
       <div className="container">
@@ -27,7 +46,7 @@ const Projects = () => {
                 <div className="leftb">
                   <img src={item.projectpicture} alt="" />
                   <div className="overlay">
-                    <span>Hover here</span>
+                    <span>{touch ? "Tap here to see majic. 👌" : "Hover here to see majic. 👌"}</span>
                   </div>
                 </div>
                 <div className="rightb">
