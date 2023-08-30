@@ -89,6 +89,19 @@ const Navbar = (props) => {
               <hr />
               <li className="navitem">
                 <Link
+                  to="Certificates"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={20}
+                  onClick={closeMenu}
+                >
+                  Certificates
+                </Link>
+              </li>
+              <hr />
+              <li className="navitem">
+                <Link
                   to="contact"
                   spy={true}
                   smooth={true}

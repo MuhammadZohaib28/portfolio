@@ -6,6 +6,7 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import './App.css'
+import Certificates from "./components/certificates/Certificates";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <Herosection />
       <Aboutme />
       <Projects />
+      <Certificates />
       <Contact />
       <Footer />
     </div>
