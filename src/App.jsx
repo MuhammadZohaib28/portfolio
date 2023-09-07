@@ -10,17 +10,15 @@ import Certificates from "./components/certificates/Certificates";
 
 
 const App = () => {
-
   const [theme, setTheme] = useState("dark");
-
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
   return (
-    <div className="app"  id={theme}>
+    <div className="app"   button={toggleTheme} id={theme}>
       <Navbar button={toggleTheme} name={theme}/>
       <Herosection />
-      <Aboutme />
+      <Aboutme /> 
       <Projects />
       <Certificates />
       <Contact />
