@@ -46,7 +46,11 @@ const Projects = () => {
                 <div className="leftb">
                   <img src={item.projectpicture} alt="" />
                   <div className="overlay">
-                    <span>{touch ? "Tap here to see majic. 👌" : "Hover here to see majic. 👌"}</span>
+                    <span>
+                      {touch
+                        ? "Tap here to see majic. 👌"
+                        : "Hover here to see majic. 👌"}
+                    </span>
                   </div>
                 </div>
                 <div className="rightb">

@@ -18,12 +18,12 @@
         color: seagreen;
         font-weight: 700;
         font-size: 2.8rem;
-        transition: all ease 1.5s;
+        transition: all ease 0.7s;
       }
       h2 {
         color: #2d2e32;
         font-size: 1.9rem;
-        transition: all ease 1.5s;
+        transition: all ease 0.7s;
       }
     }
 
@@ -40,7 +40,7 @@
         margin-bottom: 2rem;
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
           rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-        transition: all ease 1.5s;
+        transition: all ease 0.7s;
 
         &.containerbrow {
           display: flex;
@@ -68,7 +68,7 @@
               text-align: center;
               color: rgb(99, 99, 99);
               font-size: 1.1rem;
-              transition: all ease 1.5s;
+              transition: all ease 0.7s;
               // line-height: 1.9rem;
             }
 
@@ -88,7 +88,7 @@
                 font-weight: 600;
                 color: rgb(255, 255, 255);
                 border-radius: 0.2rem;
-                transition: all ease 1.5s;
+                transition: all ease 0.7s;
               }
 
               span:last-child {
@@ -98,7 +98,7 @@
                 font-weight: 600;
                 color: rgb(255, 255, 255);
                 border-radius: 0.2rem;
-                transition: all ease 1.5s;
+                transition: all ease 0.7s;
               }
             }
           }
@@ -117,7 +117,7 @@
           border-radius: 1rem;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
           position: relative;
-          transition: all ease 1.5s;
+          transition: all ease 0.7s;
 
           .overlay {
             position: absolute;
@@ -139,14 +139,14 @@
             font-weight: 700;
             cursor: pointer;
             transition: opacity 0.3s ease;
-            transition: all ease 1.5s;
+            transition: all ease 0.7s;
 
             span {
               background-color: rgb(245, 245, 245);
               color: seagreen;
               padding: 0.2rem;
               border-radius: 0.2rem;
-              transition: all ease 1.5s;
+              transition: all ease 0.7s;
             }
           }
 
@@ -180,13 +180,13 @@
           border-radius: 0.3rem;
           box-shadow: none;
           border: 1.8px solid seagreen;
-          transition: all ease 1.5s;
+          transition: all ease 0.7s;
 
           &:hover {
             background-color: rgb(255, 255, 255);
             transition: 0.4s all ease;
             box-shadow: none;
-            transition: all ease 1.5s;
+            transition: all ease 0.7s;
           }
         }
 
@@ -196,13 +196,13 @@
           border-radius: 0.3rem;
           box-shadow: none;
           border: 1.8px solid seagreen;
-          transition: all ease 1.5s;
+          transition: all ease 0.7s;
 
           &:hover {
             background-color: rgb(255, 255, 255);
             transition: 0.4s all ease;
             box-shadow: none;
-            transition: all ease 1.5s;
+            transition: all ease 0.7s;
           }
         }
         .rightbb {
@@ -216,7 +216,7 @@
           border-radius: 0.2rem;
           gap: 1rem;
           text-decoration: none;
-          transition: all ease 1.5s;
+          transition: all ease 0.7s;
 
           h3 {
             // border: 1px solid red;
@@ -246,7 +246,7 @@
       h2 {
         color: whitesmoke;
         font-size: 1.9rem;
-        transition: all ease 1.5s;
+        transition: all ease 0.7s;
       }
     }
 
@@ -255,7 +255,7 @@
         background-color: rgb(13, 13, 13);
         box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px,
           rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
-        transition: all ease 1.5s;
+        transition: all ease 0.7s;
 
         .rightb {
           // border: 1px solid red;
@@ -267,7 +267,7 @@
               text-align: center;
               color: rgb(242, 242, 242);
               font-size: 1.1rem;
-              transition: all ease 1.5s;
+              transition: all ease 0.7s;
             }
 
             .midbtn {
@@ -285,13 +285,13 @@
 
           .topr {
             color: whitesmoke;
-            transition: all ease 1.5s;
+            transition: all ease 0.7s;
           }
         }
 
         .leftb {
           box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-          transition: all ease 1.5s;
+          transition: all ease 0.7s;
 
           img {
             width: 100%;
@@ -307,7 +307,7 @@
         .rightbb {
           background-color: rgb(255, 255, 255);
           color: rgb(28, 28, 28);
-          transition: all ease 1.5s;
+          transition: all ease 0.7s;
           // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
       }
@@ -315,7 +315,7 @@
       .leftbb {
         background-color: white;
         color: rgb(28, 28, 28);
-        transition: all ease 1.5s;
+        transition: all ease 0.7s;
         // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       }
     }
@@ -344,12 +344,12 @@
           color: seagreen;
           font-weight: 700;
           font-size: 2.8rem;
-          transition: all ease 1.5s;
+          transition: all ease 0.7s;
         }
         h2 {
           color: #2d2e32;
           font-size: 1.9rem;
-          transition: all ease 1.5s;
+          transition: all ease 0.7s;
         }
       }
 
@@ -366,7 +366,7 @@
           margin-bottom: 2rem;
           box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
             rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-          transition: all ease 1.5s;
+          transition: all ease 0.7s;
 
           &.containerbrow {
             display: flex;
@@ -394,7 +394,7 @@
                 text-align: center;
                 color: rgb(99, 99, 99);
                 font-size: 1.1rem;
-                transition: all ease 1.5s;
+                transition: all ease 0.7s;
                 // line-height: 1.9rem;
               }
 
@@ -414,7 +414,7 @@
                   font-weight: 600;
                   color: rgb(255, 255, 255);
                   border-radius: 0.2rem;
-                  transition: all ease 1.5s;
+                  transition: all ease 0.7s;
                 }
 
                 span:last-child {
@@ -424,7 +424,7 @@
                   font-weight: 600;
                   color: rgb(255, 255, 255);
                   border-radius: 0.2rem;
-                  transition: all ease 1.5s;
+                  transition: all ease 0.7s;
                 }
               }
             }
@@ -443,7 +443,7 @@
             border-radius: 1rem;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
             position: relative;
-            transition: all ease 1.5s;
+            transition: all ease 0.7s;
 
             .overlay {
               position: absolute;
@@ -465,14 +465,14 @@
               font-weight: 700;
               cursor: pointer;
               transition: opacity 0.3s ease;
-              transition: all ease 1.5s;
+              transition: all ease 0.7s;
 
               span {
                 background-color: rgb(245, 245, 245);
                 color: seagreen;
                 padding: 0.2rem;
                 border-radius: 0.2rem;
-                transition: all ease 1.5s;
+                transition: all ease 0.7s;
               }
             }
 
@@ -506,13 +506,13 @@
             border-radius: 0.3rem;
             box-shadow: none;
             border: 1.8px solid seagreen;
-            transition: all ease 1.5s;
+            transition: all ease 0.7s;
 
             &:hover {
               background-color: rgb(255, 255, 255);
               transition: 0.4s all ease;
               box-shadow: none;
-              transition: all ease 1.5s;
+              transition: all ease 0.7s;
             }
           }
 
@@ -522,13 +522,13 @@
             border-radius: 0.3rem;
             box-shadow: none;
             border: 1.8px solid seagreen;
-            transition: all ease 1.5s;
+            transition: all ease 0.7s;
 
             &:hover {
               background-color: rgb(255, 255, 255);
               transition: 0.4s all ease;
               box-shadow: none;
-              transition: all ease 1.5s;
+              transition: all ease 0.7s;
             }
           }
           .rightbb {
@@ -542,7 +542,7 @@
             border-radius: 0.2rem;
             gap: 1rem;
             text-decoration: none;
-            transition: all ease 1.5s;
+            transition: all ease 0.7s;
 
             h3 {
               // border: 1px solid red;

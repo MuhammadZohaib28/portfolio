@@ -4,7 +4,9 @@ import logo from "../../Images/logo.png";
 import bars from "../../Images/bars.png";
 import close from "../../Images/close.png";
 import ThemeMode from "../thememode/ThemeMode";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
+
 
 const Navbar = (props) => {
   const [active, setActive] = useState(false);
@@ -49,7 +51,7 @@ const Navbar = (props) => {
           <div className="right">
             <ul className="navitems">
               <li className="navitem">
-                <Link
+                <ScrollLink
                   to="navbar"
                   spy={true}
                   smooth={true}
@@ -58,11 +60,11 @@ const Navbar = (props) => {
                   onClick={closeMenu}
                 >
                   Home
-                </Link>
+                </ScrollLink>
               </li>{" "}
               <hr />
               <li className="navitem">
-                <Link
+                <ScrollLink
                   to="aboutme"
                   spy={true}
                   smooth={true}
@@ -71,11 +73,11 @@ const Navbar = (props) => {
                   onClick={closeMenu}
                 >
                   About
-                </Link>
+                </ScrollLink>
               </li>{" "}
               <hr />
               <li className="navitem">
-                <Link
+                <ScrollLink
                   to="projects"
                   spy={true}
                   smooth={true}
@@ -84,11 +86,11 @@ const Navbar = (props) => {
                   onClick={closeMenu}
                 >
                   Projects
-                </Link>
+                </ScrollLink>
               </li>{" "}
               <hr />
               <li className="navitem">
-                <Link
+                <ScrollLink
                   to="Certificates"
                   spy={true}
                   smooth={true}
@@ -97,11 +99,11 @@ const Navbar = (props) => {
                   onClick={closeMenu}
                 >
                   Certificates
-                </Link>
+                </ScrollLink>
               </li>
               <hr />
               <li className="navitem">
-                <Link
+                <ScrollLink
                   to="contact"
                   spy={true}
                   smooth={true}
@@ -110,7 +112,7 @@ const Navbar = (props) => {
                   onClick={closeMenu}
                 >
                   Contact
-                </Link>
+                </ScrollLink>
               </li>{" "}
               <hr />
               <li className="navitem" onClick={props.button}>

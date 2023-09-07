@@ -56,7 +56,7 @@
             background-color: rgb(46, 46, 46);
             font-weight: 600;
             color: white;
-            transition: all ease 1.5s;
+            transition: all ease  0.7s;
           }
         }
       }
@@ -68,7 +68,7 @@
           color: #2d2e32;
           font-size: 3.5rem;
           line-height: 3rem;
-          transition: all ease 1.5s;
+          transition: all ease  0.7s;
         }
 
         span {
@@ -119,7 +119,7 @@
       border-radius: 70% 30% 44% 56% / 47% 47% 53% 53%;
       background-color: #f8fff7;
       height: 18rem;
-      transition: all ease 1.5s;
+      transition: all ease  0.7s;
       // margin-top: 1rem;
 
       animation: morph 15s ease-in-out infinite;
@@ -211,7 +211,7 @@
 
         -webkit-animation: rotate-center 15.6s steps(250, end) infinite both;
         animation: rotate-center 15.6s steps(250, end) infinite both;
-        transition: all ease 1.5s;
+        transition: all ease  0.7s;
 
         @-webkit-keyframes rotate-center {
           0% {
@@ -281,7 +281,7 @@
         left: 8rem;
         top: -1.3rem;
         border-radius: 1.5rem;
-        transition: all ease 1.5s;
+        transition: all ease  0.7s;
       }
     }
   }
@@ -346,7 +346,7 @@
               background-color: rgb(46, 46, 46);
               font-weight: 600;
               color: white;
-              transition: all ease 1.5s;
+              transition: all ease  0.7s;
             }
           }
         }
@@ -358,7 +358,7 @@
             color: #2d2e32;
             font-size: 3.5rem;
             line-height: 3rem;
-            transition: all ease 1.5s;
+            transition: all ease  0.7s;
           }
 
           span {
@@ -409,7 +409,7 @@
         border-radius: 70% 30% 44% 56% / 47% 47% 53% 53%;
         background-color: #f8fff7;
         height: 18rem;
-        transition: all ease 1.5s;
+        transition: all ease  0.7s;
         // margin-top: 1rem;
 
         animation: morph 15s ease-in-out infinite;
@@ -501,7 +501,7 @@
 
           -webkit-animation: rotate-center 15.6s steps(250, end) infinite both;
           animation: rotate-center 15.6s steps(250, end) infinite both;
-          transition: all ease 1.5s;
+          transition: all ease  0.7s;
 
           @-webkit-keyframes rotate-center {
             0% {
@@ -571,7 +571,7 @@
           left: 8rem;
           top: -1.3rem;
           border-radius: 1.5rem;
-          transition: all ease 1.5s;
+          transition: all ease  0.7s;
         }
       }
     }
@@ -941,13 +941,13 @@
 
       .desc {
         color: #f8fff7;
-        transition: all ease 1.5s;
+        transition: all ease  0.7s;
 
         p {
           .name {
             background-color: rgb(255, 255, 255);
             color: black;
-            transition: all ease 1.5s;
+            transition: all ease  0.7s;
           }
         }
       }
@@ -955,7 +955,7 @@
       .designation {
         h1 {
           color: #f8fff7;
-          transition: all ease 1.5s;
+          transition: all ease  0.7s;
         }
       }
     }
@@ -963,10 +963,10 @@
     .right {
       border: 2px solid rgb(255, 255, 255);
       background-color: #181818;
-      transition: all ease 1.5s;
+      transition: all ease  0.7s;
       img {
         border: 3px solid rgb(255, 255, 255);
-        transition: all ease 1.5s;
+        transition: all ease  0.7s;
       }
     }
   }
@@ -977,12 +977,12 @@
     .left {
       span {
         color: #f8fff7;
-        transition: all ease 1.5s;
+        transition: all ease  0.7s;
       }
 
       .borderright {
         background-color: rgb(228, 228, 228);
-        transition: all ease 1.5s;
+        transition: all ease  0.7s;
       }
     }
   }
