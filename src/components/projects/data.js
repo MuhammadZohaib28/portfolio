@@ -4,6 +4,7 @@ import project3 from "../../Images/cryptoo.png";
 import project4 from "../../Images/funnyexcusee.png";
 import project5 from "../../Images/teenziapparal.png";
 import project6 from "../../Images/country.png";
+import project7 from "../../Images/figmatoreact.png";
 
 export const projectdata = [
   {
@@ -80,5 +81,18 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/CountryRestApi",
     livedemo: true,
     live: "https://countrydata-smoky.vercel.app/",
+  },
+  {
+    id: 7,
+    projectpicture: project7,
+    projectname: "Figma design to a ReactJS website. 🎨",
+    projectdesc:
+      "This is the Figma design to a ReactJS website. This is a practice purpose only frontend part. I have worked on this website using ReactJS and applied the best practices using ReactJS.",
+    projectlanguage1: "ReactJS",
+    projectlanguage2: "Tailwindcss",
+    rowreverse: false,
+    code: "https://github.com/MuhammadZohaib28/figmatoreact",
+    livedemo: true,
+    live: "https://figmatoreact.vercel.app/",
   },
 ];
