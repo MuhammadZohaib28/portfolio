@@ -5,6 +5,7 @@ import project4 from "../../Images/funnyexcusee.png";
 import project5 from "../../Images/teenziapparal.png";
 import project6 from "../../Images/country.png";
 import project7 from "../../Images/figmatoreact.png";
+import project8 from "../../Images/fooddel.png";
 
 export const projectdata = [
   {
@@ -94,5 +95,18 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/figmatoreact",
     livedemo: true,
     live: "https://figmatoreact.vercel.app/",
+  },
+  {
+    id: 8,
+    projectpicture: project8,
+    projectname: "Food Delivery App. 🍔",
+    projectdesc:
+      "This project is a food delivery app. This is a practice purpose only frontend part. I have worked on this website using ReactJS and applied the best practices using ReactJS.",
+    projectlanguage1: "NextJS",
+    projectlanguage2: "TypeScript",
+    rowreverse: true,
+    code: "https://github.com/MuhammadZohaib28/fooddeliveryapp",
+    livedemo: true,
+    live: "https://fooddeliveryapp-omega.vercel.app/",
   },
 ];
