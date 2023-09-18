@@ -101,7 +101,7 @@ export const projectdata = [
     projectpicture: project8,
     projectname: "Food Delivery App. 🍔",
     projectdesc:
-      "This project is a food delivery app. This is a practice purpose only frontend part. I have worked on this website using ReactJS and applied the best practices using ReactJS.",
+      "This project is a food delivery app. This is a practice purpose only frontend part. I have worked on this website using NextJS along with ReactJS, TypeScript and Tailwindcss and applied the best practices using ReactJS.",
     projectlanguage1: "NextJS",
     projectlanguage2: "TypeScript",
     rowreverse: true,
