@@ -4,6 +4,7 @@ import js from "../../Images/js.svg";
 import reactjs from "../../Images/reactjs.svg";
 import tailwind from "../../Images/tailwind.svg";
 import sass from "../../Images/sass.svg";
+import nextjs from "../../Images/nextjslogo.svg";
 
 export const techstack = [
   {
@@ -24,10 +25,14 @@ export const techstack = [
   },
   {
     id: 5,
-    name: tailwind,
+    name: nextjs,
   },
   {
     id: 6,
+    name: tailwind,
+  },
+  {
+    id: 7,
     name: sass,
   },
 ];
