@@ -7,7 +7,6 @@ import ThemeMode from "../thememode/ThemeMode";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 
-
 const Navbar = (props) => {
   const [active, setActive] = useState(false);
   const [click, setClick] = useState(false);
@@ -37,6 +36,20 @@ const Navbar = (props) => {
       <div className="left">
         <img src={logo} alt="" />
       </div>
+
+      <ScrollLink
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={20}
+        onClick={closeMenu}
+      >
+        <div className="afp">
+          <span className="dot" />
+          <span>Available for projects</span>
+        </div>
+      </ScrollLink>
 
       <div className="responsivemenu" onClick={handleClick}>
         {!click ? (

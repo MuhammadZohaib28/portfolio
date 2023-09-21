@@ -17,7 +17,7 @@
 
     color: black;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      transition: all ease 0.7s;
+    transition: all ease 0.7s;
   }
 
   .responsivemenuu {
@@ -29,13 +29,13 @@
     width: 12rem;
     border-radius: 0.2rem;
     background-color: white;
-      transition: all ease 0.7s;
+    transition: all ease 0.7s;
 
     hr {
       width: 6.5rem;
       height: 0.1rem;
       background-color: gray;
-        transition: all ease 0.7s;
+      transition: all ease 0.7s;
     }
   }
 
@@ -69,7 +69,7 @@
         &:hover {
           background-color: seagreen;
           color: white;
-            transition: all ease 0.7s;
+          transition: all ease 0.7s;
         }
       }
     }
@@ -90,6 +90,70 @@
       object-fit: cover;
     }
   }
+
+  .afp {
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    border-radius: 3rem;
+    border: 2px solid grey;
+    display: flex;
+    // justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    &:hover{
+      background-color: rgba(232, 232, 232, 0.563);
+    }
+
+    span {
+      font-weight: 600;
+      color: black;
+    }
+
+    .dot {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.4rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: radial-gradient(
+        circle at -1% 57.5%,
+        rgb(19, 170, 82) 0%,
+        rgb(0, 102, 43) 90%
+      );
+      -webkit-animation: slide-in-fwd-center 0.8s
+        cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse both;
+      animation: slide-in-fwd-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        infinite alternate-reverse both;
+
+      @-webkit-keyframes slide-in-fwd-center {
+        0% {
+          -webkit-transform: translateZ(-1400px);
+          transform: translateZ(-1400px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-fwd-center {
+        0% {
+          -webkit-transform: translateZ(-1400px);
+          transform: translateZ(-1400px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 
 #dark .navbar {
@@ -100,25 +164,23 @@
     background-color: rgb(0, 0, 0);
     box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
     color: rgb(255, 255, 255);
-      transition: all ease 0.7s;
-    
+    transition: all ease 0.7s;
   }
 
   .responsivemenuu {
     border: 1px solid rgb(162, 162, 162);
     background-color: rgb(0, 0, 0);
     color: white;
-      transition: all ease 0.7s;
-    
+    transition: all ease 0.7s;
+
     hr {
       background-color: rgb(219, 219, 219);
-        transition: all ease 0.7s;
+      transition: all ease 0.7s;
     }
   }
 
   .right {
     .navitems {
-
       .navitem {
         // border: 1px solid rgb(187, 187, 187);
       }
@@ -131,15 +193,19 @@
       background-color: white;
       padding: 0.15rem;
       border-radius: 10rem;
-        transition: all ease 0.7s;
+      transition: all ease 0.7s;
+    }
+  }
+
+  .afp {
+    &:hover{
+      background-color: rgba(41, 41, 41, 0.563);
+    }
+    span {
+      color: white;
     }
   }
 }
-
-
-
-
-
 
 // 13 INCHES MONITOR
 
@@ -156,14 +222,14 @@
     top: 0;
     width: 100%;
     z-index: 999;
-  
+
     &.active {
       background-color: white;
-  
+
       color: black;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
-  
+
     .responsivemenuu {
       border: 1px solid rgb(162, 162, 162);
       position: absolute;
@@ -176,7 +242,7 @@
       // border: 1px solid red;
       height: 4rem;
     }
-  
+
     .right {
       .navitems {
         display: flex;
@@ -185,7 +251,7 @@
         flex-direction: row;
         list-style: none;
         gap: 0.5rem;
-  
+
         .navitem {
           font-weight: 500;
           font-size: 1.2rem;
@@ -197,13 +263,13 @@
           justify-content: center;
           align-items: center;
           cursor: pointer;
-  
+
           &:hover {
             hr {
               width: 10rem;
             }
           }
-  
+
           &:hover {
             background-color: seagreen;
             color: white;
@@ -211,17 +277,17 @@
         }
       }
     }
-  
+
     .responsivemenu {
       .menu {
         height: 2rem;
         cursor: pointer;
       }
     }
-  
+
     .left {
       // border: 1px solid red;
-  
+
       img {
         height: 5rem;
         object-fit: cover;
@@ -229,15 +295,6 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
 
 // MOBILE RESPONSIVENESS
 
@@ -281,7 +338,7 @@
       .navitems {
         display: flex;
         justify-content: space-around;
-        align-items: center;  
+        align-items: center;
         list-style: none;
         flex-direction: column;
         gap: 1.5rem;
@@ -307,6 +364,19 @@
         object-fit: cover;
 
         // border: 1px solid red;
+      }
+    }
+    .afp {
+      display: none;
+  
+      span {
+        font-weight: 600;
+        color: black;
+
+      }
+  
+      .dot {
+
       }
     }
   }
