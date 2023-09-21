@@ -2,6 +2,8 @@ import courseralogo from '../../Images/coursera.svg'
 import gdsclogo from '../../Images/gdsclogo.png'
 import coursera from '../../Images/certificate.png'
 import gdsc from '../../Images/gdsc.jpg'
+import meta from '../../Images/meta.jpg'
+import metalogo from '../../Images/metalogoo.png'
 
 const certificates = [
     {
@@ -19,6 +21,14 @@ const certificates = [
         span: "JavaScript",
         certificate: gdsc,
         link: "https://cert.devtown.in.tech/verify/Z2aH5S8"
+    },
+    {
+        id:3,
+        logo:metalogo,
+        tagline:"Introduction to Front-End Development by",
+        span: "Coursera",
+        certificate: meta,
+        link: "https://coursera.org/verif y/6EK63BHAJMW3"
     }
 ]
 
