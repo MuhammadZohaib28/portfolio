@@ -26,7 +26,7 @@ const certificates = [
         id:3,
         logo:metalogo,
         tagline:"Introduction to Front-End Development by",
-        span: "Coursera",
+        span: "Meta",
         certificate: meta,
         link: "https://coursera.org/verif y/6EK63BHAJMW3"
     }
