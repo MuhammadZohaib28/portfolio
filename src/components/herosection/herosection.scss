@@ -139,7 +139,7 @@
 
         &:hover{
           scale: 1.6;
-          background-color: rgb(125, 216, 164);
+          background: linear-gradient(to right, white, seagreen);
         }
 
         @keyframes morph {
@@ -284,7 +284,8 @@
         position: absolute;
         width: 0.2rem;
         height: 6rem;
-        background-color: rgb(176, 176, 176);
+        background: linear-gradient(to bottom, violet, indigo,  #001399 , seagreen, #edd94c, orange, red);
+        
         left: 8rem;
         top: -1.3rem;
         border-radius: 1.5rem;
@@ -1244,15 +1245,17 @@
         span {
           font-size: 1.2rem;
           font-weight: 500;
+          
         }
 
         .borderright {
           position: absolute;
+          
           width: 0.2rem;
-          height: 6rem;
+          height: 10rem;
           background-color: rgb(176, 176, 176);
-          left: 8rem;
-          top: -1.3rem;
+          left: 7rem;
+          top: -3.3rem;
           border-radius: 1.5rem;
         }
       }
