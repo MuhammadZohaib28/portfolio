@@ -44,7 +44,7 @@ const Projects = () => {
                 }
               >
                 <div className="leftb">
-                  <img src={item.projectpicture} alt="" />
+                  <img src={item.projectpicture} alt="projectpicture" loading="lazy"/>
                   <div className="overlay">
                     <span>
                       {touch
@@ -80,7 +80,7 @@ const Projects = () => {
                           <h3>Not Avaialble</h3>
                         )}
 
-                        <img src={live} alt="" className="imglive" />
+                        <img src={live} alt="" className="imglive" loading="lazy"/>
                       </a>
                     </div>
                     <div className="btnss">
@@ -91,7 +91,7 @@ const Projects = () => {
                         className="rightbb"
                       >
                         <span>Code</span>
-                        <img src={github} alt="" />
+                        <img src={github} alt="" loading="lazy"/>
                       </a>
                     </div>
                   </div>
