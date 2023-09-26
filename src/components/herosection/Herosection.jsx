@@ -3,6 +3,7 @@ import "./herosection.scss";
 import hand from "../../Images/hand.png";
 import linkedin from "../../Images/linkedIn.png";
 import github from "../../Images/github.png";
+import upwork from "../../Images/upwork.png";
 import zohaibpicture from "../../Images/zohaib's picture.png";
 import { techstack } from "./data";
 
@@ -41,6 +42,14 @@ const Herosection = () => {
               rel="noopener noreferrer"
             >
               <img src={github} alt="" className="lastchild" />
+            </a>
+
+            <a
+              href="https://www.upwork.com/freelancers/muhammadzohaibs2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={upwork} alt="" className="firstchild upwork" />
             </a>
           </div>
         </div>
