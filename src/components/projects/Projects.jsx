@@ -43,12 +43,13 @@ const Projects = () => {
                     : "containerb"
                 }
               >
-                <div className="leftb">
+                <div className={item.hover ? "leftb": "leftbb"}>
                   <img
                     src={item.projectpicture}
                     alt="projectpicture"
                     loading="lazy"
                   />
+
                   {item.hover ? (
                     <div className="overlay">
                       <span>
@@ -57,9 +58,7 @@ const Projects = () => {
                           : "Hover here to see majic. 👌"}
                       </span>
                     </div>
-                  ) : (
-                    null
-                  )}
+                  ) : null}
                 </div>
                 <div className="rightb">
                   <div className="topr">
