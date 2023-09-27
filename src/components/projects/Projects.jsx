@@ -44,14 +44,22 @@ const Projects = () => {
                 }
               >
                 <div className="leftb">
-                  <img src={item.projectpicture} alt="projectpicture" loading="lazy"/>
-                  <div className="overlay">
-                    <span>
-                      {touch
-                        ? "Tap here to see majic. 👌"
-                        : "Hover here to see majic. 👌"}
-                    </span>
-                  </div>
+                  <img
+                    src={item.projectpicture}
+                    alt="projectpicture"
+                    loading="lazy"
+                  />
+                  {item.hover ? (
+                    <div className="overlay">
+                      <span>
+                        {touch
+                          ? "Tap here to see majic. 👌"
+                          : "Hover here to see majic. 👌"}
+                      </span>
+                    </div>
+                  ) : (
+                    null
+                  )}
                 </div>
                 <div className="rightb">
                   <div className="topr">
@@ -80,7 +88,12 @@ const Projects = () => {
                           <h3>Not Avaialble</h3>
                         )}
 
-                        <img src={live} alt="" className="imglive" loading="lazy"/>
+                        <img
+                          src={live}
+                          alt=""
+                          className="imglive"
+                          loading="lazy"
+                        />
                       </a>
                     </div>
                     <div className="btnss">
@@ -91,7 +104,7 @@ const Projects = () => {
                         className="rightbb"
                       >
                         <span>Code</span>
-                        <img src={github} alt="" loading="lazy"/>
+                        <img src={github} alt="" loading="lazy" />
                       </a>
                     </div>
                   </div>

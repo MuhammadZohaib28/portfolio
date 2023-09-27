@@ -6,6 +6,7 @@ import project5 from "../../Images/teenziapparal.png";
 import project6 from "../../Images/country.png";
 import project7 from "../../Images/figmatoreact.png";
 import project8 from "../../Images/fooddel.png";
+import project9 from "../../Images/ontheway.gif";
 
 export const projectdata = [
   {
@@ -20,6 +21,7 @@ export const projectdata = [
     live: "https://muhammadzohaibportfolio.vercel.app/",
     rowreverse: false,
     livedemo: true,
+    hover:true,
   },
   {
     id: 2,
@@ -32,6 +34,7 @@ export const projectdata = [
     rowreverse: true,
     livedemo: false,
     code: "https://github.com/MuhammadZohaib28/Fiverr-Clone-ReactJS-Frontend-Part-",
+    hover:true,
   },
   {
     id: 3,
@@ -44,6 +47,7 @@ export const projectdata = [
     rowreverse: false,
     code: "https://github.com/MuhammadZohaib28/CryptoPriceApp",
     livedemo: false,
+    hover:true,
   },
   {
     id: 4,
@@ -57,6 +61,7 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/funnyexcusegenerator",
     live: "https://funnyexcusegenerator.vercel.app/",
     livedemo: true,
+    hover:true,
   },
   {
     id: 5,
@@ -69,6 +74,7 @@ export const projectdata = [
     rowreverse: false,
     code: "https://github.com/MuhammadZohaib28/Clothing-Store-Frontend",
     livedemo: false,
+    hover:true,
   },
   {
     id: 6,
@@ -82,6 +88,7 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/CountryRestApi",
     livedemo: true,
     live: "https://countrydata-smoky.vercel.app/",
+    hover:true,
   },
   {
     id: 7,
@@ -95,6 +102,7 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/figmatoreact",
     livedemo: true,
     live: "https://figmatoreact.vercel.app/",
+    hover:true,
   },
   {
     id: 8,
@@ -108,5 +116,20 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/fooddeliveryapp",
     livedemo: true,
     live: "https://fooddeliveryapp-omega.vercel.app/",
+    hover:true,
+  },
+  {
+    id: 9,
+    projectpicture: project9,
+    projectname: "On the way | Autonomous Shopping. 🚀",
+    projectdesc:
+      "This is paid freelance project. I have worked on this website using ReactJS, JavaScript, Framer Motion, SCSS and Tailwindcss and applied the best practices using ReactJS.",
+    projectlanguage1: "ReactJS",
+    projectlanguage2: "Framer Motion",
+    rowreverse: false,
+    code: "https://github.com/MuhammadZohaib28/onthewaytesting",
+    livedemo: true,
+    live: "https://ontheway.store/",
+    hover:false,
   },
 ];
