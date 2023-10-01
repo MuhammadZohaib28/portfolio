@@ -9,6 +9,7 @@
     rgb(50, 50, 50) 0%,
     rgb(0, 0, 0) 99.4%
   );
+  
 
   transition: all ease 2s;
 }

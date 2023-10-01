@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./projects.scss";
-import project1 from "../../Images/sc.png";
 import github from "../../Images/github.png";
 import live from "../../Images/live.png";
 import { projectdata } from "./data";
