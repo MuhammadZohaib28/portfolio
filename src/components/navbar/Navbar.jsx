@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 import logo from "../../Images/logo.png";
 import bars from "../../Images/bars.png";
+import gitfork from "../../assets/gitfork.svg";
 import close from "../../Images/close.png";
 import ThemeMode from "../thememode/ThemeMode";
 import { Link as ScrollLink } from "react-scroll";
+
 import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = (props) => {
@@ -51,18 +53,47 @@ const Navbar = (props) => {
         </div>
       </ScrollLink>
 
-      <div className="responsivemenu" onClick={handleClick}>
-        {!click ? (
-          <img src={bars} alt="" className="menu" />
-        ) : (
-          <img src={close} alt="" className="menu" />
-        )}
+      <div className="forkandmenu">
+        {/* <a
+          href="https://github.com/MuhammadZohaib28/portfolio"
+          target="_blank"
+          className="link"
+          rel="noopener noreferrer"
+        >
+          <div className="fork">
+            <img src={gitfork} alt="gitfork logo" className="gitforkimg" />
+            <span>Fork</span>
+          </div>
+        </a> */}
+        <div className="responsivemenu" onClick={handleClick}>
+          {!click ? (
+            <img src={bars} alt="" className="menu" />
+          ) : (
+            <img src={close} alt="" className="menu" />
+          )}
+        </div>
       </div>
 
       {click && (
         <div className="responsivemenuu">
           <div className="right">
             <ul className="navitems">
+              
+              <a
+                href="https://github.com/MuhammadZohaib28/portfolio"
+                target="_blank"
+                className="link"
+                rel="noopener noreferrer"
+              >
+                <div className="fork">
+                  <img
+                    src={gitfork}
+                    alt="gitfork logo"
+                    className="gitforkimg"
+                  />
+                  <span>Fork</span>
+                </div>
+              </a>
               <li className="navitem">
                 <ScrollLink
                   to="navbar"

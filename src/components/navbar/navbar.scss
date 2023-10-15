@@ -20,6 +20,43 @@
     transition: all ease 0.7s;
   }
 
+  .forkandmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+
+    .link {
+      text-decoration: none;
+      color: black;
+    }
+
+    .fork {
+      border: 1px solid gray;
+      border-radius: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      padding: 0 0.4rem;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      span {
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      .gitforkimg {
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: contain;
+      }
+    }
+  }
   .responsivemenuu {
     border: 1px solid rgb(162, 162, 162);
     position: absolute;
@@ -47,6 +84,40 @@
       flex-direction: column;
       list-style: none;
       gap: 0.5rem;
+
+      
+
+        .link {
+          text-decoration: none;
+          color: black;
+        }
+
+        .fork {
+          border: 1px solid gray;
+          border-radius: 2rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          padding: 0 0.4rem;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+
+          span {
+            font-size: 1.3rem;
+            font-weight: 600;
+          }
+
+          .gitforkimg {
+            width: 2.5rem;
+            height: 2.5rem;
+            object-fit: contain;
+          }
+        }
+      
 
       .navitem {
         font-weight: 500;
@@ -102,7 +173,7 @@
     position: relative;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       background-color: rgba(232, 232, 232, 0.563);
     }
 
@@ -167,6 +238,40 @@
     transition: all ease 0.7s;
   }
 
+  .forkandmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+
+    .link {
+      text-decoration: none;
+      color: white;
+    }
+
+    .fork {
+      border: 2px solid #808080;
+      border-radius: 2rem;
+
+      &:hover {
+        background-color: #171717;
+      }
+
+      span {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: white;
+      }
+
+      .gitforkimg {
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: contain;
+        filter: brightness(0) invert(1) sepia(0) saturate(5) hue-rotate(320deg);
+      }
+    }
+  }
+
   .responsivemenuu {
     border: 1px solid rgb(162, 162, 162);
     background-color: rgb(0, 0, 0);
@@ -181,6 +286,29 @@
 
   .right {
     .navitems {
+      .link {
+        text-decoration: none;
+        color: white;
+      }
+
+      .fork {
+        border: 2px solid #808080;
+        border-radius: 2rem;
+
+        &:hover {
+          background-color: #171717;
+        }
+
+        span {
+          color: white;
+        }
+
+        .gitforkimg {
+          filter: brightness(0) invert(1) sepia(0) saturate(5)
+            hue-rotate(320deg);
+        }
+      }
+
       .navitem {
         // border: 1px solid rgb(187, 187, 187);
       }
@@ -198,7 +326,7 @@
   }
 
   .afp {
-    &:hover{
+    &:hover {
       background-color: rgba(41, 41, 41, 0.563);
     }
     span {
@@ -318,6 +446,12 @@
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
+    .forkandmenu {
+      .link {
+        display: none;
+      }
+    }
+
     .responsivemenuu {
       // border: 1px solid red;
       position: absolute;
@@ -342,6 +476,37 @@
         list-style: none;
         flex-direction: column;
         gap: 1.5rem;
+
+        .link {
+          text-decoration: none;
+        }
+
+        .fork {
+          border: 1px solid gray;
+          border-radius: 2rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          padding: 0 0.4rem;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+
+          span {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: black;
+          }
+
+          .gitforkimg {
+            width: 2.5rem;
+            height: 2.5rem;
+            object-fit: contain;
+          }
+        }
 
         .navitem {
           font-weight: 500;
@@ -368,15 +533,13 @@
     }
     .afp {
       display: none;
-  
+
       span {
         font-weight: 600;
         color: black;
-
       }
-  
-      .dot {
 
+      .dot {
       }
     }
   }
