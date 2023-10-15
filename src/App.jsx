@@ -7,13 +7,15 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import './App.css'
 import Certificates from "./components/certificates/Certificates";
-
+import GithubStats from "./components/githubstats/GithubStats";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
+
+
   return (
     <div className="app"   button={toggleTheme} id={theme}>
       <Navbar button={toggleTheme} name={theme}/>
@@ -21,6 +23,7 @@ const App = () => {
       <Aboutme /> 
       <Projects />
       <Certificates />
+      <GithubStats />
       <Contact />
       <Footer />
     </div>
