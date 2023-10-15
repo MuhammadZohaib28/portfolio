@@ -117,6 +117,19 @@ const Navbar = (props) => {
               <hr />
               <li className="navitem">
                 <ScrollLink
+                  to="githubstats"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={20}
+                  onClick={closeMenu}
+                >
+                  GitHub Stats
+                </ScrollLink>
+              </li>{" "}
+              <hr />
+              <li className="navitem">
+                <ScrollLink
                   to="contact"
                   spy={true}
                   smooth={true}
