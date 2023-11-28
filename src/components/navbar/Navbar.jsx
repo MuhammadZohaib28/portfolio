@@ -106,7 +106,7 @@ const Navbar = (props) => {
                   Home
                 </ScrollLink>
               </li>{" "}
-              <hr />
+              {/* <hr /> */}
               <li className="navitem">
                 <ScrollLink
                   to="aboutme"
@@ -119,7 +119,7 @@ const Navbar = (props) => {
                   About
                 </ScrollLink>
               </li>{" "}
-              <hr />
+              {/* <hr /> */}
               <li className="navitem">
                 <ScrollLink
                   to="projects"
@@ -132,7 +132,7 @@ const Navbar = (props) => {
                   Projects
                 </ScrollLink>
               </li>{" "}
-              <hr />
+              {/* <hr /> */}
               <li className="navitem">
                 <ScrollLink
                   to="Certificates"
@@ -145,7 +145,7 @@ const Navbar = (props) => {
                   Certificates
                 </ScrollLink>
               </li>
-              <hr />
+              {/* <hr /> */}
               <li className="navitem">
                 <ScrollLink
                   to="githubstats"
@@ -158,7 +158,7 @@ const Navbar = (props) => {
                   GitHub Stats
                 </ScrollLink>
               </li>{" "}
-              <hr />
+              {/* <hr /> */}
               <li className="navitem">
                 <ScrollLink
                   to="contact"
@@ -171,8 +171,8 @@ const Navbar = (props) => {
                   Contact
                 </ScrollLink>
               </li>{" "}
-              <hr />
-              <li className="navitem" onClick={props.button}>
+              {/* <hr /> */}
+              <li className="navitem toggle" onClick={props.button}>
                 <ThemeMode />
               </li>
             </ul>

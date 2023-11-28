@@ -85,47 +85,45 @@
       list-style: none;
       gap: 0.5rem;
 
-      
+      .link {
+        text-decoration: none;
+        color: black;
+      }
 
-        .link {
-          text-decoration: none;
-          color: black;
+      .fork {
+        border: 1px solid gray;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0 0.4rem;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
         }
 
-        .fork {
-          border: 1px solid gray;
-          border-radius: 2rem;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          height: 100%;
-          width: 100%;
-          padding: 0 0.4rem;
-
-          &:hover {
-            background-color: rgba(0, 0, 0, 0.1);
-          }
-
-          span {
-            font-size: 1.3rem;
-            font-weight: 600;
-          }
-
-          .gitforkimg {
-            width: 2.5rem;
-            height: 2.5rem;
-            object-fit: contain;
-          }
+        span {
+          font-size: 1.3rem;
+          font-weight: 600;
         }
-      
 
+        .gitforkimg {
+          width: 2.5rem;
+          height: 2.5rem;
+          object-fit: contain;
+        }
+      }
+
+      
       .navitem {
         font-weight: 500;
         font-size: 1.2rem;
-        // border: 1px solid red;
+        border: 1px solid rgb(0, 0, 0);
         padding: 0.2rem 0.5rem;
         border-radius: 0.3rem;
-        width: 100%;
+        width: 87%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -142,6 +140,18 @@
           color: white;
           transition: all ease 0.7s;
         }
+      }
+      .toggle {
+        border: none;
+
+        &:hover {
+          background-color: rgb(215, 215, 215);
+          color: white;
+          transition: all ease 0.7s;
+          width: 60%;
+          border-radius: 10rem;
+        }
+        
       }
     }
   }
@@ -311,6 +321,20 @@
 
       .navitem {
         // border: 1px solid rgb(187, 187, 187);
+        width: 100%;
+        border: 1px solid white;
+      }
+      .toggle{
+        border: none;
+        &:hover{
+          background-color: rgb(22, 22, 22);
+          color: white;
+          transition: all ease 0.7s;
+          width: 60%;
+          border-radius: 10rem;
+        }
+        
+        
       }
     }
   }
