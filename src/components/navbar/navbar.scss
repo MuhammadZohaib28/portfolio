@@ -145,10 +145,11 @@
         border: none;
 
         &:hover {
-          background-color: rgb(215, 215, 215);
+          // background-color: rgb(215, 215, 215);
+          background-color: none;
           color: white;
           transition: all ease 0.7s;
-          width: 60%;
+          // width: 60%;
           border-radius: 10rem;
         }
         
@@ -326,11 +327,13 @@
       }
       .toggle{
         border: none;
+      
         &:hover{
-          background-color: rgb(22, 22, 22);
+          // background-color: rgb(22, 22, 22);
+          background-color: black;
           color: white;
           transition: all ease 0.7s;
-          width: 60%;
+          // width: 60%;
           border-radius: 10rem;
         }
         
@@ -535,6 +538,20 @@
         .navitem {
           font-weight: 500;
           font-size: 1.2rem;
+        }
+
+        .toggle{
+          border: none;
+          &:hover{
+            // background-color: rgb(22, 22, 22);
+            background-color: white;
+            color: white;
+            transition: all ease 0.7s;
+            // width: 60%;
+            border-radius: 10rem;
+          }
+          
+          
         }
       }
     }
