@@ -48,6 +48,17 @@ const GithubStats = () => {
           />
         </div>
       </div>
+      <div className="lessmore">
+        <span className="less">Less</span>
+        <div className="boxes">
+          <span className="box1" />
+          <span className="box2" />
+          <span className="box3" />
+          <span className="box4" />
+        </div>
+
+        <span className="more">More</span>
+      </div>
     </div>
   );
 };
