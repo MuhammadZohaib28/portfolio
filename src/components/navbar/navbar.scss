@@ -292,8 +292,8 @@
       border: none;
       background: radial-gradient(
         circle at -1% 57.5%,
-        rgba(218, 218, 218, 0.063) 100%,
-        rgba(221, 221, 221, 0.065) 100%
+        rgba(218, 218, 218, 0.263) 100%,
+        rgba(221, 221, 221, 0.265) 100%
       );
       color: rgb(255, 255, 255);
       // padding: 0.5rem;
@@ -561,7 +561,7 @@
         
 
         cursor: pointer;
-        &:active {
+        &:hover {
           background: radial-gradient(
             circle at -1% 57.5%,
             rgba(0, 0, 0, 0.063) 100%,
@@ -686,4 +686,5 @@
       }
     }
   }
+
 }
