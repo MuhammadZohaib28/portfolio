@@ -25,6 +25,38 @@
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
+    border: 2px solid rgb(30, 30, 30);
+    border-radius: 3rem;
+    padding: 0 0.8rem 0 0;
+    background-color: #f8fcff;
+
+    .resumebutton {
+      border: none;
+      background-color: transparent;
+      color: rgb(0, 0, 0);
+      padding: 0.5rem;
+      border-radius: 3rem;
+      font-weight: 600;
+      letter-spacing: 0.002rem;
+      font-size: 1rem;
+
+      cursor: pointer;
+      &:hover {
+        background: radial-gradient(
+          circle at -1% 57.5%,
+          rgba(0, 0, 0, 0.063) 100%,
+          rgba(0, 0, 0, 0.065) 100%
+        );
+
+        cursor: pointer;
+
+        transition: all ease 0.5s;
+
+        &::before {
+          content: "Download";
+        }
+      }
+    }
 
     .link {
       text-decoration: none;
@@ -116,7 +148,6 @@
         }
       }
 
-      
       .navitem {
         font-weight: 500;
         font-size: 1.2rem;
@@ -152,7 +183,6 @@
           // width: 60%;
           border-radius: 10rem;
         }
-        
       }
     }
   }
@@ -253,7 +283,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    // gap: 1rem;
+    border: 2px solid #808080;
+
+    background-color: #030303;
+
+    .resumebutton {
+      border: none;
+      background: radial-gradient(
+        circle at -1% 57.5%,
+        rgba(218, 218, 218, 0.063) 100%,
+        rgba(221, 221, 221, 0.065) 100%
+      );
+      color: rgb(255, 255, 255);
+      // padding: 0.5rem;
+      // border-radius: 3rem;
+      // font-weight: 600;
+      // letter-spacing: 0.002rem;
+      // font-size: 1rem;
+
+      cursor: pointer;
+      &:hover {
+        background: radial-gradient(
+          circle at -1% 57.5%,
+          rgba(255, 255, 255, 0.213) 100%,
+          rgba(255, 255, 255, 0.215) 100%
+        );
+
+        cursor: pointer;
+
+        transition: all ease 0.5s;
+
+        &::before {
+          content: "Download";
+        }
+      }
+    }
 
     .link {
       text-decoration: none;
@@ -325,10 +390,10 @@
         width: 100%;
         border: 1px solid white;
       }
-      .toggle{
+      .toggle {
         border: none;
-      
-        &:hover{
+
+        &:hover {
           // background-color: rgb(22, 22, 22);
           background-color: black;
           color: white;
@@ -336,8 +401,6 @@
           // width: 60%;
           border-radius: 10rem;
         }
-        
-        
       }
     }
   }
@@ -474,6 +537,47 @@
     }
 
     .forkandmenu {
+      display: flex;
+      gap: 1rem;
+      border: 2px solid rgb(30, 30, 30);
+      border-radius: 3rem;
+      padding: 0 0.8rem 0 0;
+      background-color: #f8fcff;
+
+      .resumebutton {
+        border: none;
+        background: radial-gradient(
+          circle at -1% 57.5%,
+          rgba(0, 0, 0, 0.063) 100%,
+          rgba(0, 0, 0, 0.065) 100%
+        );
+        color: rgb(0, 0, 0);
+        padding: 0.6rem;
+        border-radius: 3rem;
+        font-weight: 600;
+        letter-spacing: 0.002rem;
+        font-size: 0.9rem;
+
+        
+
+        cursor: pointer;
+        &:active {
+          background: radial-gradient(
+            circle at -1% 57.5%,
+            rgba(0, 0, 0, 0.063) 100%,
+            rgba(0, 0, 0, 0.065) 100%
+          );
+          
+
+          cursor: pointer;
+
+          transition: all ease 0.5s;
+
+          &::before {
+            content: "Download";
+          }
+        }
+      }
       .link {
         display: none;
       }
@@ -540,9 +644,9 @@
           font-size: 1.2rem;
         }
 
-        .toggle{
+        .toggle {
           border: none;
-          &:hover{
+          &:hover {
             // background-color: rgb(22, 22, 22);
             background-color: white;
             color: white;
@@ -550,8 +654,6 @@
             // width: 60%;
             border-radius: 10rem;
           }
-          
-          
         }
       }
     }

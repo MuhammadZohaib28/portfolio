@@ -6,12 +6,17 @@ import gitfork from "../../assets/gitfork.svg";
 import close from "../../Images/close.png";
 import ThemeMode from "../thememode/ThemeMode";
 import { Link as ScrollLink } from "react-scroll";
+import cvFile from "../../assets/Muhammad Zohaib Resume.pdf";
 
 import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = (props) => {
   const [active, setActive] = useState(false);
   const [click, setClick] = useState(false);
+
+  const handleDownloadCVClick = () => {
+    window.open(cvFile, "_blank");
+  };
 
   const handleClick = () => {
     setClick(!click);
@@ -54,17 +59,7 @@ const Navbar = (props) => {
       </ScrollLink>
 
       <div className="forkandmenu">
-        {/* <a
-          href="https://github.com/MuhammadZohaib28/portfolio"
-          target="_blank"
-          className="link"
-          rel="noopener noreferrer"
-        >
-          <div className="fork">
-            <img src={gitfork} alt="gitfork logo" className="gitforkimg" />
-            <span>Fork</span>
-          </div>
-        </a> */}
+        <button onClick={handleDownloadCVClick} className="resumebutton"> Resume</button>
         <div className="responsivemenu" onClick={handleClick}>
           {!click ? (
             <img src={bars} alt="" className="menu" />
@@ -78,7 +73,6 @@ const Navbar = (props) => {
         <div className="responsivemenuu">
           <div className="right">
             <ul className="navitems">
-              
               <a
                 href="https://github.com/MuhammadZohaib28/portfolio"
                 target="_blank"
