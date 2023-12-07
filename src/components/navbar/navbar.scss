@@ -450,18 +450,21 @@
 
     .responsivemenuu {
       border: 1px solid rgb(162, 162, 162);
+      //  border: 1px solid red;
       position: absolute;
-      right: 0;
+      right: 1rem;
       top: 5.5rem;
       padding: 0.5rem 1rem;
-      width: 32rem;
+      width: 90%;
       border-radius: 0.2rem;
       background-color: white;
       // border: 1px solid red;
-      height: 4rem;
+      height: 3.8rem;
     }
 
     .right {
+      //  border: 1px solid red;
+       width: 100%;
       .navitems {
         display: flex;
         justify-content: space-around;
@@ -469,17 +472,21 @@
         flex-direction: row;
         list-style: none;
         gap: 0.5rem;
+        // border: 1px solid red;
+        width: 100%;
 
         .navitem {
-          font-weight: 500;
-          font-size: 1.2rem;
           // border: 1px solid red;
-          padding: 0.2rem 0.5rem;
+          font-weight: 500;
+          font-size: 0.88rem;
+          // border: 1px solid red;
+          padding: 0.2rem 0.4rem;
           border-radius: 0.3rem;
           width: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
+          height: 2.6rem;
           cursor: pointer;
 
           &:hover {
@@ -504,7 +511,7 @@
     }
 
     .left {
-      // border: 1px solid red;
+      // border: 1px solid red; 
 
       img {
         height: 5rem;
