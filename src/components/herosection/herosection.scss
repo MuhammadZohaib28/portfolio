@@ -215,6 +215,8 @@
 
     .right {
       display: flex;
+      flex-wrap: wrap;
+      width: 100%;
       gap: 2.5rem;
       align-items: center;
       // border: 1px solid red;
