@@ -1367,7 +1367,7 @@
   }
 }
 
-@media (height: 1200px) {
+@media (min-height: 1050px) {
   .hero {
     margin-top: 4rem;
     gap: 7rem;
@@ -1684,3 +1684,5 @@
     }
   }
 }
+
+
