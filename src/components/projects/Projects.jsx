@@ -42,7 +42,7 @@ const Projects = () => {
                     : "containerb"
                 }
               >
-                <div className={item.hover ? "leftb": "leftbb"}>
+                <div className={item.hover ? "leftb" : "leftbb"}>
                   <img
                     src={item.projectpicture}
                     alt="projectpicture"

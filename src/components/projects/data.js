@@ -21,7 +21,7 @@ export const projectdata = [
     live: "https://muhammadzohaibportfolio.vercel.app/",
     rowreverse: false,
     livedemo: true,
-    hover:true,
+    hover: true,
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export const projectdata = [
     rowreverse: true,
     livedemo: false,
     code: "https://github.com/MuhammadZohaib28/Fiverr-Clone-ReactJS-Frontend-Part-",
-    hover:true,
+    hover: true,
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ export const projectdata = [
     rowreverse: false,
     code: "https://github.com/MuhammadZohaib28/CryptoPriceApp",
     livedemo: false,
-    hover:true,
+    hover: true,
   },
   {
     id: 4,
@@ -61,7 +61,7 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/funnyexcusegenerator",
     live: "https://funnyexcusegenerator.vercel.app/",
     livedemo: true,
-    hover:true,
+    hover: true,
   },
   {
     id: 5,
@@ -74,7 +74,7 @@ export const projectdata = [
     rowreverse: false,
     code: "https://github.com/MuhammadZohaib28/Clothing-Store-Frontend",
     livedemo: false,
-    hover:true,
+    hover: true,
   },
   {
     id: 6,
@@ -88,7 +88,7 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/CountryRestApi",
     livedemo: true,
     live: "https://countrydata-smoky.vercel.app/",
-    hover:true,
+    hover: true,
   },
   {
     id: 7,
@@ -102,7 +102,7 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/figmatoreact",
     livedemo: true,
     live: "https://figmatoreact.vercel.app/",
-    hover:true,
+    hover: true,
   },
   {
     id: 8,
@@ -116,7 +116,7 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/fooddeliveryapp",
     livedemo: true,
     live: "https://fooddeliveryapp-omega.vercel.app/",
-    hover:true,
+    hover: true,
   },
   {
     id: 9,
@@ -130,6 +130,6 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/onthewaytesting",
     livedemo: true,
     live: "https://ontheway.store/",
-    hover:false,
+    hover: false,
   },
 ];
