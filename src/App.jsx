@@ -5,10 +5,11 @@ import Aboutme from "./components/aboutme/Aboutme";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import './App.css'
+import "./App.css";
 import Certificates from "./components/certificates/Certificates";
 import GithubStats from "./components/githubstats/GithubStats";
 import Banner from "./components/banner/Banner";
+import ParticlesBackground from "./config/ParticlesBackground";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -16,18 +17,20 @@ const App = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
 
-
   return (
-    <div className="app"   button={toggleTheme} id={theme}>
-      <Banner />
-      <Navbar button={toggleTheme} name={theme}/>
-      <Herosection />
-      <Aboutme /> 
-      <Projects />
-      <Certificates />
-      <GithubStats />
-      <Contact />
-      <Footer />
+    <div>
+      <ParticlesBackground />
+      <div className="app" button={toggleTheme} id={theme}>
+        <Banner />
+        <Navbar button={toggleTheme} name={theme} />
+        <Herosection />
+        <Aboutme />
+        <Projects />
+        <Certificates />
+        <GithubStats />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 };
