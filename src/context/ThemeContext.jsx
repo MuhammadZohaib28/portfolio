@@ -1,6 +1,5 @@
-
 import { createContext, useState } from "react";
-import "../App.css"
+import "../App.css";
 
 export const ThemeContext = createContext();
 
@@ -12,7 +11,9 @@ export const ThemeProvider = ({ children }) => {
   };
   return (
     <ThemeContext.Provider value={{ toggle, mode }}>
-      <div className={`theme ${mode}`}>{children}</div>
+      <div className={`theme ${mode}`}>
+        {children}
+      </div>
     </ThemeContext.Provider>
   );
 };
