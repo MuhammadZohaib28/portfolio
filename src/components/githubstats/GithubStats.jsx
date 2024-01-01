@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import "./githubstats.scss";
 
 const GithubStats = () => {
+  const [contributions, setContributions] = useState(true);
   const selectLastHalfYear = (contributions) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
@@ -32,20 +33,24 @@ const GithubStats = () => {
         </div>
 
         <div className="bottom">
-          <GitHubCalendar
-            fontSize={14}
-            blockMargin={7}
-            blockRadius={3}
-            blockSize={20}
-            colorScheme="light"
-            username="muhammadzohaib28"
-            transformData={selectLastHalfYear}
-            showWeekdayLabels={true}
-            hideColorLegend
-            labels={{
-              totalCount: "{{count}} contributions in the last half year",
-            }}
-          />
+          {!contributions ? (
+            <GitHubCalendar
+              fontSize={14}
+              blockMargin={7}
+              blockRadius={3}
+              blockSize={20}
+              colorScheme="light"
+              username="MuhammadZohaib28"
+              transformData={selectLastHalfYear}
+              showWeekdayLabels={true}
+              hideColorLegend
+              labels={{
+                totalCount: "{{count}} contributions in the last half year",
+              }}
+            />
+          ) : (
+            <span className="spanError">Sorry, there was an error loading the stats. Please try again later. 😔</span>
+          )}
         </div>
       </div>
       <div className="lessmore">
