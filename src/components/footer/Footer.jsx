@@ -14,12 +14,28 @@ const Footer = () => {
             href="https://www.buymeacoffee.com/muhammadzohaib"
             target="_blank"
             rel="noopener noreferrer"
+            className="a"
           >
             Buy me a ☕
           </a>
           .
         </span>
+
       </div>
+      <a
+          href="//www.dmca.com/Protection/Status.aspx?ID=a43bbbd4-68fe-418c-ad1e-ad8476f981c0"
+          title="DMCA.com Protection Status"
+          class="dmca-badge"
+        >
+          {" "}
+          <img
+            src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=a43bbbd4-68fe-418c-ad1e-ad8476f981c0"
+            alt="DMCA.com Protection Status"
+          />
+        </a>{" "}
+        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
+          {" "}
+        </script>
       <div className="right">
         <span>
           Thank you so much for your most precious time, I am glad that you
