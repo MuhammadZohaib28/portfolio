@@ -4,20 +4,15 @@ import "./githubstats.scss";
 
 const GithubStats = () => {
   const [contributions, setContributions] = useState(true);
-  const selectLastHalfYear = (contributions) => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const shownMonths = 6;
+
+  const selectYearContributions = (contributions) => {
+    const targetYear = 2023;
 
     return contributions.filter((activity) => {
       const date = new Date(activity.date);
-      const monthOfDay = date.getMonth();
+      const year = date.getFullYear();
 
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
-      );
+      return year === targetYear;
     });
   };
 
@@ -33,7 +28,7 @@ const GithubStats = () => {
         </div>
 
         <div className="bottom">
-          {!contributions ? (
+          {contributions ? (
             <GitHubCalendar
               fontSize={14}
               blockMargin={7}
@@ -41,11 +36,11 @@ const GithubStats = () => {
               blockSize={20}
               colorScheme="light"
               username="MuhammadZohaib28"
-              transformData={selectLastHalfYear}
+              transformData={selectYearContributions}
               showWeekdayLabels={true}
               hideColorLegend
               labels={{
-                totalCount: "{{count}} contributions in the last half year",
+                totalCount: "{{count}} contributions in the year 2023",
               }}
             />
           ) : (

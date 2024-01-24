@@ -22,7 +22,7 @@ const Herosection = () => {
           </div>
           <div className="desc">
             <p>
-              Hi, I'm <span className="name">Muhammad Zohaib</span>. A
+              Hi, I'm <span className="name animate-charcter">Muhammad Zohaib</span>. A
               passionate Front-end React Developer based in Karachi, Pakistan.
               📍
             </p>

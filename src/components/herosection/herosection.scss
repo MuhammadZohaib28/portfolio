@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Inter:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gelasio&family=Inter:wght@400;500&display=swap");
 
 .hero {
   // border: 1px solid red;
@@ -54,10 +54,13 @@
         p {
           font-size: 1.2rem;
           font-weight: 300;
+         
+
+          
 
           .name {
             // border: 1px solid red;
-            font-family: 'Gelasio', serif;
+            font-family: "Gelasio", serif;
             border-radius: 0.3rem;
             padding: 0.15rem 0.5rem;
             background-color: rgb(46, 46, 46);
@@ -65,7 +68,11 @@
             font-weight: 500;
             color: rgb(255, 255, 255);
             transition: all ease 0.7s;
+
+
+            
           }
+          
         }
       }
 
@@ -1385,14 +1392,14 @@
       margin: 0 auto;
       align-items: center;
       // border: 1px solid red;
-  
+
       .left {
         display: flex;
         flex-direction: column;
         gap: 2.5rem;
-  
+
         width: 50%;
-  
+
         .socialmedia {
           // border: 1px solid red;
           width: 22%;
@@ -1401,53 +1408,53 @@
           gap: 2rem;
           align-items: center;
           // margin-left: -1rem;
-  
+
           .firstchild {
             height: 3.3rem;
           }
-  
+
           .upwork {
             height: 3.5rem;
           }
-  
+
           .lastchild {
             height: 3rem;
           }
         }
-  
+
         .desc {
           // border: 1px solid red;
           p {
             font-size: 2rem;
             font-weight: 300;
-  
+
             .name {
               // border: 1px solid red;
               border-radius: 0.2rem;
               padding: 0.15rem 0.5rem;
               background-color: rgb(46, 46, 46);
-  
+
               font-weight: 600;
               color: rgb(255, 255, 255);
               transition: all ease 0.7s;
             }
           }
         }
-  
+
         .designation {
           // border: 1px solid red;
-  
+
           h1 {
             color: #2d2e32;
             font-size: 4.5rem;
             line-height: 4rem;
             transition: all ease 0.7s;
           }
-  
+
           span {
             // border: 1px solid red;
             margin-left: 1rem;
-  
+
             img {
               height: 5.5rem;
               animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
@@ -1455,7 +1462,7 @@
               animation-iteration-count: infinite; /* Never stop waving :) */
               transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
               display: inline-block;
-  
+
               @keyframes wave-animation {
                 0% {
                   transform: rotate(0deg);
@@ -1486,7 +1493,7 @@
           }
         }
       }
-  
+
       .right {
         border: 2px solid black;
         border-radius: 70% 30% 44% 56% / 47% 47% 53% 53%;
@@ -1495,14 +1502,14 @@
         transition: all ease 0.7s;
         background: url("https://t3.ftcdn.net/jpg/02/03/15/34/360_F_203153438_6tvdEUB2Nw9K0pubP6GAk7TjSIKlLorI.jpg")
           no-repeat center center/cover;
-  
+
         // margin-top: 1rem;
-  
+
         animation: morph 15s ease-in-out infinite;
         transition: all 0.4s ease-in-out;
         z-index: 5;
         overflow: hidden;
-  
+
         img {
           border: 3px solid black;
           height: 25rem;
@@ -1512,7 +1519,7 @@
           transition: all 0.4s ease-in-out;
           z-index: 5;
           overflow: hidden;
-  
+
           &:hover {
             scale: 1.6;
             background: linear-gradient(
@@ -1523,48 +1530,48 @@
               green
             );
           }
-  
+
           @keyframes morph {
             0% {
               border-radius: 42% 58% 59% 41% / 42% 41% 59% 58%;
             }
-  
+
             10% {
               border-radius: 33% 67% 59% 41% / 51% 34% 66% 49%;
             }
-  
+
             20% {
               border-radius: 33% 67% 46% 54% / 65% 45% 55% 35%;
             }
-  
+
             30% {
               border-radius: 47% 53% 32% 68% / 59% 34% 66% 41%;
             }
-  
+
             40% {
               border-radius: 60% 40% 40% 60% / 44% 50% 50% 56%;
             }
-  
+
             50% {
               border-radius: 73% 27% 73% 27% / 29% 63% 37% 71%;
             }
-  
+
             60% {
               border-radius: 50% 50% 57% 43% / 41% 40% 60% 59%;
             }
-  
+
             70% {
               border-radius: 27% 73% 32% 68% / 58% 24% 76% 42%;
             }
-  
+
             80% {
               border-radius: 40% 60% 28% 72% / 49% 45% 55% 51%;
             }
-  
+
             90% {
               border-radius: 59% 41% 47% 53% / 61% 58% 42% 39%;
             }
-  
+
             100% {
               border-radius: 44% 56% 56% 44% / 39% 50% 50% 61%;
             }
@@ -1580,15 +1587,15 @@
       // justify-content: space-between;
       gap: 7rem;
       align-items: center;
-  
+
       .right {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         gap: 3.5rem;
         align-items: center;
-        // border: 1px solid red; 
-  
+        // border: 1px solid red;
+
         .container {
           height: 6rem;
           width: 6rem;
@@ -1599,11 +1606,11 @@
           border-radius: 100rem;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
             rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  
+
           -webkit-animation: rotate-center 15.6s steps(250, end) infinite both;
           animation: rotate-center 15.6s steps(250, end) infinite both;
           transition: all ease 0.7s;
-  
+
           @-webkit-keyframes rotate-center {
             0% {
               -webkit-transform: rotate(0);
@@ -1624,18 +1631,18 @@
               transform: rotate(360deg);
             }
           }
-  
+
           &:hover {
             cursor: pointer;
             animation: myAnim 2s ease 0s 1 normal forwards;
-  
+
             @keyframes myAnim {
               0%,
               50%,
               100% {
                 opacity: 1;
               }
-  
+
               25%,
               75% {
                 opacity: 0.8;
@@ -1643,7 +1650,7 @@
               }
             }
           }
-  
+
           img {
             height: 80%;
             width: 80%;
@@ -1652,18 +1659,18 @@
           }
         }
       }
-  
+
       .left {
         // border: 1px solid red;
         text-align: center;
         border-radius: 0.4rem;
         position: relative;
-  
+
         span {
           font-size: 2.2rem;
           font-weight: 500;
         }
-  
+
         .borderright {
           position: absolute;
           width: 0.2rem;
@@ -1678,7 +1685,7 @@
             orange,
             red
           );
-  
+
           left: 12rem;
           top: -1.3rem;
           border-radius: 1.5rem;
@@ -1688,7 +1695,3 @@
     }
   }
 }
-
-
-
-
