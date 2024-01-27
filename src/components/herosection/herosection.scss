@@ -54,9 +54,6 @@
         p {
           font-size: 1.2rem;
           font-weight: 300;
-         
-
-          
 
           .name {
             // border: 1px solid red;
@@ -68,11 +65,7 @@
             font-weight: 500;
             color: rgb(255, 255, 255);
             transition: all ease 0.7s;
-
-
-            
           }
-          
         }
       }
 
@@ -84,6 +77,8 @@
           font-size: 3.5rem;
           line-height: 3rem;
           transition: all ease 0.7s;
+
+          filter: (drop-shadow(1px 4px 0  #2E8B57));
         }
 
         span {
