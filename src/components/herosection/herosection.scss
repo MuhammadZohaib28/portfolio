@@ -64,7 +64,12 @@
 
             font-weight: 500;
             color: rgb(255, 255, 255);
-            transition: all ease 0.7s;
+            transition: all ease 0.1s;
+
+            &:hover {
+              filter: (drop-shadow(1px 4px 0 #2e8b57));
+              color: rgb(255, 255, 255);
+            }
           }
         }
       }
@@ -77,8 +82,9 @@
           font-size: 3.5rem;
           line-height: 3rem;
           transition: all ease 0.7s;
+          text-transform: capitalize;
 
-          filter: (drop-shadow(1px 4px 0  #2E8B57));
+          filter: (drop-shadow(1px 4px 0 #6bffab));
         }
 
         span {
@@ -1078,6 +1084,7 @@
         h1 {
           color: #f8fff7;
           transition: all ease 0.7s;
+          filter: (drop-shadow(1px 4px 0 #2e8b57));
         }
       }
     }
