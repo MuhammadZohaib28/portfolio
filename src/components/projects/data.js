@@ -7,6 +7,7 @@ import project6 from "../../Images/country.png";
 import project7 from "../../Images/figmatoreact.png";
 import project8 from "../../Images/fooddel.png";
 import project9 from "../../Images/ontheway.gif";
+import project10 from "../../Images/PEKISA.png";
 
 export const projectdata = [
   {
@@ -131,5 +132,19 @@ export const projectdata = [
     livedemo: true,
     live: "https://ontheway.store/",
     hover: false,
+  },
+  {
+    id: 10,
+    projectpicture: project10,
+    projectname: "PEKISA | Domain Appraisal. 🚀",
+    projectdesc:
+      "This project is just a frontend part for one of my client, here I have used the ReactJS and TailwindCSS and the code is fully optimized, inshort best for SEO..",
+    projectlanguage1: "ReactJS",
+    projectlanguage2: "TailwindCSS",
+    rowreverse: true,
+    code: "https://github.com/MuhammadZohaib28/Pekisa",
+    livedemo: true,
+    live: "https://pekisa.vercel.app/",
+    hover: true,
   },
 ];
