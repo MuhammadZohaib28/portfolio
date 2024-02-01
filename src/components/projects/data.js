@@ -8,6 +8,7 @@ import project7 from "../../Images/figmatoreact.png";
 import project8 from "../../Images/fooddel.png";
 import project9 from "../../Images/ontheway.gif";
 import project10 from "../../Images/PEKISA.png";
+import project11 from "../../Images/Eshop.png";
 
 export const projectdata = [
   {
@@ -145,6 +146,20 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/Pekisa",
     livedemo: true,
     live: "https://pekisa.vercel.app/",
+    hover: true,
+  },
+  {
+    id: 11,
+    projectpicture: project11,
+    projectname: "Eshop | A TailwindCSS Project. 🚀",
+    projectdesc:
+      "This is paid freelance project. I have worked on this website using ReactJS, JavaScript, AOS, Tailwindcss and applied the best practices using ReactJS.",
+    projectlanguage1: "ReactJS",
+    projectlanguage2: "TaiwindCSS",
+    rowreverse: false,
+    code: "https://github.com/MuhammadZohaib28/Eshop-TailwindCSS-Project",
+    livedemo: true,
+    live: "https://eshop-ecru-two.vercel.app/",
     hover: true,
   },
 ];
