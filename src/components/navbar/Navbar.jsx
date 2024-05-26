@@ -116,6 +116,18 @@ const Navbar = (props) => {
               {/* <hr /> */}
               <li className="navitem">
                 <ScrollLink
+                  to="jobsection"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={20}
+                  onClick={closeMenu}
+                >
+                  Jobs
+                </ScrollLink>
+              </li>{" "}
+              <li className="navitem">
+                <ScrollLink
                   to="projects"
                   spy={true}
                   smooth={true}
