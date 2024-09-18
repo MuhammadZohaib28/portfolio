@@ -227,6 +227,19 @@
             
           }
 
+          .liveRow{
+            position: absolute;
+            top: 1px;
+            left: 0;
+            font-weight: 400;
+            background-color: seagreen;
+            font-size: 1rem;
+            border-radius: 0.1rem;
+            border-top-left-radius: 1rem;
+            color: white;
+            padding: 0.1rem 0.7rem; 
+          }
+
           .left{
             position: absolute;
             top: 1px;

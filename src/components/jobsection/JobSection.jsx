@@ -45,7 +45,7 @@ const JobSection = () => {
                     : "containerb"
                 }
               >
-                {item.live ? <h1 className="live">Live</h1> : <h1 className="left">Left</h1>}
+                {item.live ? <h1 className={item.rowreverse ? " liveRow" : "live "}>Live</h1> : <h1 className="left">Left</h1>}
 
                 <div className="leftbb">
 
@@ -69,7 +69,10 @@ const JobSection = () => {
                       <span>{item.projectlanguage2}</span>
                       <span>{item.daysWorked}</span>
                     </div>
-                    <EmailCopy email={item.companyEmail} />
+                    {item.companyEmail && (
+                      <EmailCopy email={item.companyEmail} />
+                    )}
+
                   </div>
                 </div>
               </div>
