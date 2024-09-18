@@ -9,9 +9,8 @@ const getDaysWorked = (startDate) => {
   for (let date = new Date(startDate); date <= currentDate; date.setDate(date.getDate() + 1)) {
     const dayOfWeek = date.getDay();
     // Exclude Saturdays (6) and Sundays (0)
-    if (dayOfWeek !== 0 && dayOfWeek !== 6) {
+    
       totalDaysWorked++;
-    }
   }
 
   return totalDaysWorked;
