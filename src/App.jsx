@@ -11,6 +11,8 @@ import GithubStats from "./components/githubstats/GithubStats";
 import Banner from "./components/banner/Banner";
 import JobSection from "./components/jobsection/JobSection";
 
+
+
 const App = () => {
   const [theme, setTheme] = useState("dark");
   const toggleTheme = () => {
@@ -25,6 +27,7 @@ const App = () => {
         <Herosection />
         <Aboutme />
         <JobSection />
+        
         <Projects />
         <Certificates />
         <GithubStats />

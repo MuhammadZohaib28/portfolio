@@ -29,6 +29,7 @@
   
       .bottom {
         .containerb {
+          position: relative;
           // border: 1px solid red;
           display: flex;
           justify-content: space-between;
@@ -63,6 +64,27 @@
               justify-content: center;
               gap: 0.8rem;
               align-items: center;
+
+              .companyEmail{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                font-size: 1.1rem;
+                color: rgb(227, 227, 227);
+                font-weight: 500;
+                transition: all ease 0.7s;
+                background-color: #2e322d8c;
+                padding: 0.2rem 0.7rem; 
+                border-radius: 1rem;
+                cursor: pointer;
+
+                &:hover{
+                  background-color: #2e322d45;
+                  transition: all ease 0.7s;
+                }
+              }
+
   
               p {
                 text-align: center;
@@ -80,6 +102,15 @@
                 justify-content: center;
                 align-items: center;
                 gap: 1rem;
+
+                span{
+                  padding: 0.4rem 0.7rem;
+                  background-color: seagreen;
+                  font-weight: 600;
+                  color: rgb(255, 255, 255);
+                  border-radius: 0.2rem;
+                  transition: all ease 0.7s;  
+                }
   
                 span:first-child {
                   // border: 1px solid red;
@@ -178,6 +209,35 @@
               height: auto;
               transition: transform 10.3s ease; /* for smooth transition */
             }
+          }
+
+          
+
+          .live{
+            position: absolute;
+            top: 1px;
+            right: 0;
+            font-weight: 400;
+            background-color: seagreen;
+            font-size: 1rem;
+            border-radius: 0.1rem;
+            border-top-right-radius: 1rem;
+            color: white;
+            padding: 0.1rem 0.7rem; 
+            
+          }
+
+          .left{
+            position: absolute;
+            top: 1px;
+            right: 0;
+            font-weight: 400;
+            background-color: rgb(220, 62, 48);
+            font-size: 1rem;
+            border-radius: 0.1rem;
+            border-top-right-radius: 1rem;
+            color: white;
+            padding: 0.1rem 0.7rem; 
           }
         }
   

@@ -4,9 +4,10 @@ import github from "../../Images/github.png";
 
 import { projectdata } from "./data";
 import live from "../../Images/live.png";
+import EmailCopy from "./EmailCopy";
 
 
-const JobSection = () =>{
+const JobSection = () => {
   const [touch, setTouch] = useState(false);
 
   useEffect(() => {
@@ -44,13 +45,18 @@ const JobSection = () =>{
                     : "containerb"
                 }
               >
+                {item.live ? <h1 className="live">Live</h1> : <h1 className="left">Left</h1>}
+
                 <div className="leftbb">
+
                   <img
                     src={item.projectpicture}
                     alt="projectpicture"
                     loading="lazy"
                   />
+
                 </div>
+
                 <div className="rightb">
                   <div className="topr">
                     <h3>{item.projectname}</h3>
@@ -61,7 +67,9 @@ const JobSection = () =>{
                     <div className="midbtn">
                       <span>{item.projectlanguage1}</span>
                       <span>{item.projectlanguage2}</span>
+                      <span>{item.daysWorked}</span>
                     </div>
+                    <EmailCopy email={item.companyEmail} />
                   </div>
                 </div>
               </div>
@@ -74,4 +82,3 @@ const JobSection = () =>{
 };
 
 export default JobSection;
-    
