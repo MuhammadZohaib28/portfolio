@@ -6,7 +6,7 @@ const GithubStats = () => {
   const [contributions, setContributions] = useState(true);
 
   const selectYearContributions = (contributions) => {
-    const targetYear = 2023;
+    const targetYear = 2024;
 
     return contributions.filter((activity) => {
       const date = new Date(activity.date);
@@ -40,7 +40,7 @@ const GithubStats = () => {
               showWeekdayLabels={true}
               hideColorLegend
               labels={{
-                totalCount: "{{count}} contributions in the year 2023",
+                totalCount: "{{count}} contributions in the year 2024",
               }}
             />
           ) : (
