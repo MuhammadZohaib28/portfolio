@@ -6,7 +6,7 @@ import gitfork from "../../assets/gitfork.svg";
 import close from "../../Images/close.png";
 import ThemeMode from "../thememode/ThemeMode";
 import { Link as ScrollLink } from "react-scroll";
-import cvFile from "../../assets/Muhammad Zohaib Resume.pdf";
+import cvFile from "../../assets/cv.pdf";
 
 import { Link as RouterLink } from "react-router-dom";
 
