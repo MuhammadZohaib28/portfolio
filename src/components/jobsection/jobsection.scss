@@ -908,7 +908,33 @@
         }
   
         .bottom {
+          
           .containerb {
+            .live{
+              position: absolute;
+              top: 0.1px;
+              right: 0;
+              font-weight: 400;
+              background-color: seagreen;
+              font-size: 0.7rem;
+              border-radius: 0.1rem;
+              border-top-right-radius: 0.7rem;
+              color: white;
+              padding: 0.1rem 0.5rem; 
+            }
+
+            .liveRow{
+              position: absolute;
+              top: 0.1px;
+              left: 0;
+              font-weight: 400;
+              background-color: seagreen;
+              font-size: 0.7rem;
+              border-radius: 0.1rem;
+              border-top-left-radius: 0.7rem;
+              color: white;
+              padding: 0.1rem 0.5rem; 
+            }
             // border: 1px solid red;
             display: flex;
             flex-direction: column;
