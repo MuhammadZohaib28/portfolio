@@ -3,7 +3,7 @@ import "./herosection.scss";
 import hand from "../../Images/hand.png";
 import linkedin from "../../Images/linkedIn.png";
 import github from "../../Images/github.png";
-import upwork from "../../Images/upwork.png";
+import upwork from "../../Images/fiverr.png";
 import zohaibpicture from "../../Images/zohaib's picture.png";
 import { techstack } from "./data";
 
@@ -45,7 +45,7 @@ const Herosection = () => {
             </a>
 
             <a
-              href="https://www.upwork.com/freelancers/muhammadzohaibs2"
+              href="https://www.fiverr.com/frontendworkss?up_rollout=true"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -34,6 +34,7 @@
         // justify-content: space-between;
         gap: 1rem;
         align-items: center;
+        justify-content: center;
         // margin-left: -1rem;
 
         .firstchild {
@@ -41,7 +42,8 @@
         }
 
         .upwork {
-          height: 2.5rem;
+          height: 3rem;
+          // margin-left: -1rem;
         }
 
         .lastchild {
