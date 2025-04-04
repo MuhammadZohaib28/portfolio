@@ -6,7 +6,6 @@ import { projectdata } from "./data";
 import live from "../../Images/live.png";
 import EmailCopy from "./EmailCopy";
 
-
 const JobSection = () => {
   const [touch, setTouch] = useState(false);
 
@@ -45,16 +44,20 @@ const JobSection = () => {
                     : "containerb"
                 }
               >
-                {item.live ? <h1 className={item.rowreverse ? " liveRow" : "live "}>Live</h1> : <h1 className="left">Left</h1>}
+                {item.live ? (
+                  <h1 className={item.rowreverse ? " liveRow" : "live "}>
+                    Live
+                  </h1>
+                ) : (
+                  <h1 className="left">Left</h1>
+                )}
 
                 <div className="leftbb">
-
                   <img
                     src={item.projectpicture}
                     alt="projectpicture"
                     loading="lazy"
                   />
-
                 </div>
 
                 <div className="rightb">
@@ -68,11 +71,15 @@ const JobSection = () => {
                       <span>{item.projectlanguage1}</span>
                       <span>{item.projectlanguage2}</span>
                       <span>{item.daysWorked}</span>
+                      {item.leftDate && (
+                        <span style={{ backgroundColor: "#FF3333" }}>
+                          Left Date: {item.leftDate}
+                        </span>
+                      )}
                     </div>
                     {item.companyEmail && (
                       <EmailCopy email={item.companyEmail} />
                     )}
-
                   </div>
                 </div>
               </div>

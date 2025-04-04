@@ -52,15 +52,16 @@ export const projectdata = [
     projectdesc:
       "I am currently working as a Frontend Developer at Miletap. I work with ReactJS, Redux, and Ant Design.",
     projectlanguage1: "Junior ReactJS Developer",
-    projectlanguage2: `${monthsWorked}+ months`, // Updated months
-    daysWorked: `${daysWorked} days`, // Total days worked excluding weekends
+    projectlanguage2: `13+ months`, // Updated months
+    daysWorked: `397 days`, // Total days worked excluding weekends
     code: "https://github.com/MuhammadZohaib28/React-Portfolio-Website",
     live: "https://muhammadzohaibportfolio.vercel.app/",
     rowreverse: false,
     livedemo: true,
     hover: true,
-    live: true,
-    companyEmail: "muhammad.zohaib@miletap.com"
+    live: false,
+    companyEmail: "muhammad.zohaib@miletap.com",
+    leftDate: "3rd April, 2025"
   },
   {
     id: 1,
