@@ -930,12 +930,33 @@
               left: 0;
               font-weight: 400;
               background-color: seagreen;
-              font-size: 0.7rem;
+              font-size: 0.8rem;
               border-radius: 0.1rem;
               border-top-left-radius: 0.7rem;
               color: white;
-              padding: 0.1rem 0.5rem; 
+              padding: 0.1rem 0.7rem; 
+              font-weight: 600;
+              z-index: 1;
+              
             }
+
+
+            .left{
+              position: absolute;
+              top: 0.1px;
+              right: 0;
+              font-weight: 600;
+              background-color: rgb(220, 62, 48);
+              font-size: 0.8rem;
+              border-radius: 0.1rem;
+              border-top-right-radius: 1rem;
+              color: white;
+              padding: 0.1rem 0.7rem;
+              z-index: 1; 
+            }
+
+
+            
             // border: 1px solid red;
             display: flex;
             flex-direction: column;
