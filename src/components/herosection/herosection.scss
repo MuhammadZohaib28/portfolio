@@ -29,12 +29,12 @@
 
       .socialmedia {
         // border: 1px solid red;
-        width: 22%;
+        width: 100%;
         display: flex;
         // justify-content: space-between;
         gap: 1rem;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         // margin-left: -1rem;
 
         .firstchild {
@@ -44,6 +44,10 @@
         .upwork {
           height: 3rem;
           // margin-left: -1rem;
+        }
+
+        .upworkk {
+          // filter: invert(1);
         }
 
         .lastchild {
@@ -161,7 +165,6 @@
         &:hover {
           background: url("https://cdn.dribbble.com/userupload/11225362/file/original-c556f5d873c996992430621715733e26.png?resize=752x")
             no-repeat center center/contain;
-            
         }
 
         @keyframes morph {
@@ -358,9 +361,9 @@
 
         .socialmedia {
           // border: 1px solid red;
-          width: 22%;
+          width: 100%;
           display: flex;
-          // justify-content: space-between;
+          justify-content: start;
           gap: 1rem;
           align-items: center;
           // margin-left: -1rem;
@@ -810,9 +813,9 @@
 
         .socialmedia {
           // border: 1px solid red;
-          width: 50%;
+          width: 100%;
           display: flex;
-          // justify-content: space-between;
+          justify-content: start;
           gap: 0.4rem;
           align-items: center;
           // margin-left: -1rem;
@@ -823,6 +826,10 @@
 
           .lastchild {
             height: 2.3rem;
+          }
+          .upwork {
+            height: 3rem;
+            // margin-left: -1rem;
           }
         }
 
@@ -1049,6 +1056,10 @@
   .top {
     .left {
       .socialmedia {
+        .upworkk {
+          filter: invert(1);
+        }
+
         .lastchild {
           height: 2.4rem;
           background-color: #f8fff7;
@@ -1137,10 +1148,10 @@
         width: 100%;
 
         .socialmedia {
-          // border: 1px solid red;
-          width: 50%;
+          border: 1px solid red;
+          width: 100%;
           display: flex;
-          // justify-content: space-between;
+          justify-content: start;
           gap: 0.4rem;
           align-items: center;
           // margin-left: -1rem;
@@ -1151,6 +1162,9 @@
 
           .lastchild {
             height: 2.3rem;
+          }
+          .upwork {
+            height: 3rem;
           }
         }
 

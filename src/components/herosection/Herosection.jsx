@@ -1,11 +1,9 @@
 import React from "react";
 import "./herosection.scss";
 import hand from "../../Images/hand.png";
-import linkedin from "../../Images/linkedIn.png";
-import github from "../../Images/github.png";
-import upwork from "../../Images/fiverr.png";
+
 import zohaibpicture from "../../Images/zohaib's picture.png";
-import { techstack } from "./data";
+import { socialMedia, techstack } from "./data";
 
 const Herosection = () => {
   return (
@@ -22,35 +20,24 @@ const Herosection = () => {
           </div>
           <div className="desc">
             <p>
-              Hi, I'm <span className="name animate-charcter">Muhammad Zohaib</span>. A
+              Hi, I'm{" "}
+              <span className="name animate-charcter">Muhammad Zohaib</span>. A
               passionate Front-end React Developer based in Karachi, Pakistan.
               📍
             </p>
           </div>
+
           <div className="socialmedia">
-            <a
-              href="https://www.linkedin.com/in/muhammad-zohaib-b94280190/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={linkedin} alt="" className="firstchild" />
-            </a>
-
-            <a
-              href="https://github.com/MuhammadZohaib28"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={github} alt="" className="lastchild" />
-            </a>
-
-            <a
-              href="https://www.fiverr.com/frontendworkss?up_rollout=true"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={upwork} alt="" className="firstchild upwork" />
-            </a>
+            {socialMedia.map((i, index) => (
+              <a
+                href={i.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+              >
+                <img src={i.image} alt="" className={i.className} />
+              </a>
+            ))}
           </div>
         </div>
         <div className="right">

@@ -5,8 +5,12 @@ import reactjs from "../../Images/reactjs.svg";
 import tailwind from "../../Images/tailwind.svg";
 import sass from "../../Images/sass.svg";
 import nextjs from "../../Images/nextjslogo.svg";
-import expressjs from '../../Images/expressjss.png'
-import nodeJs from '../../Images/nodeJs.png'
+import expressjs from "../../Images/expressjss.png";
+import nodeJs from "../../Images/nodeJs.png";
+import linkedin from "../../Images/linkedIn.png";
+import github from "../../Images/github.png";
+import upwork from "../../Images/fiverr.png";
+import upworkk from "../../Images/upworkk.png";
 
 export const techstack = [
   {
@@ -44,5 +48,28 @@ export const techstack = [
   {
     id: 9,
     name: nodeJs,
-  }
+  },
+];
+
+export const socialMedia = [
+  {
+    link: "https://www.linkedin.com/in/muhammad-zohaib-b94280190/",
+    image: linkedin,
+    className: "firstchild",
+  },
+  {
+    link: "https://github.com/MuhammadZohaib28",
+    image: github,
+    className: "lastchild",
+  },
+  {
+    link: "https://www.fiverr.com/frontendworkss?up_rollout=true",
+    image: upwork,
+    className: "firstchild upwork",
+  },
+  {
+    link: "https://www.upwork.com/freelancers/muhammadzohaibs2",
+    image: upworkk,
+    className: "firstchild upworkk",
+  },
 ];
