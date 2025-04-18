@@ -1,18 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import GitHubCalendar from "react-github-calendar";
 import "./githubstats.scss";
 
 const GithubStats = () => {
   const [contributions, setContributions] = useState(true);
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  // Update the year every year (after 365 days)
+  useEffect(() => {
+    const now = new Date();
+    const nextYear = new Date(now.getFullYear() + 1, 0, 1); // January 1st of next year
+    const msUntilNextYear = nextYear - now;
+
+    const timer = setTimeout(() => {
+      setCurrentYear((prevYear) => prevYear + 1);
+    }, msUntilNextYear);
+
+    return () => clearTimeout(timer);
+  }, [currentYear]);
 
   const selectYearContributions = (contributions) => {
-    const targetYear = 2024;
-
     return contributions.filter((activity) => {
       const date = new Date(activity.date);
       const year = date.getFullYear();
-
-      return year === targetYear;
+      return year === currentYear;
     });
   };
 
@@ -21,10 +32,7 @@ const GithubStats = () => {
       <div className="container">
         <div className="top">
           <h1>GitHub Stats</h1>
-          <h2>
-            {/* GitHub Stats: Where I flex my coding prowess, Gen Z style 💻📊 */}
-            Unveiling My GitHub Stats! 🔥💻
-          </h2>
+          <h2>Unveiling My GitHub Stats! 🔥💻</h2>
         </div>
 
         <div className="bottom">
@@ -40,11 +48,14 @@ const GithubStats = () => {
               showWeekdayLabels={true}
               hideColorLegend
               labels={{
-                totalCount: "{{count}} contributions in the year 2024",
+                totalCount: `{{count}} contributions in the year ${currentYear}`,
               }}
             />
           ) : (
-            <span className="spanError">Sorry, there was an error loading the stats. Please try again later. 😔</span>
+            <span className="spanError">
+              Sorry, there was an error loading the stats. Please try again
+              later. 😔
+            </span>
           )}
         </div>
       </div>
