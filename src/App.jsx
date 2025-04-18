@@ -10,8 +10,7 @@ import Certificates from "./components/certificates/Certificates";
 import GithubStats from "./components/githubstats/GithubStats";
 import Banner from "./components/banner/Banner";
 import JobSection from "./components/jobsection/JobSection";
-
-
+import Freelance from "./components/freelance/Freelance";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -27,7 +26,7 @@ const App = () => {
         <Herosection />
         <Aboutme />
         <JobSection />
-        
+        <Freelance />
         <Projects />
         <Certificates />
         <GithubStats />
