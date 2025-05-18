@@ -34,7 +34,7 @@ const JobSection = () => {
           <h2>Each role a distinct milestone in professional growth 🚀</h2>
         </div>
 
-        {projectdata.map((item) => {
+        {[...projectdata].reverse().map((item) => {
           return (
             <div className="bottom" key={item.id}>
               <div
