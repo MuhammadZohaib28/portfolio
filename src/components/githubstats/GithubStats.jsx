@@ -27,7 +27,7 @@ const GithubStats = () => {
     });
   };
 
-  return (
+  return (  
     <div className="githubstats">
       <div className="container">
         <div className="top">
