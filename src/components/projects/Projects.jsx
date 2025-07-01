@@ -94,17 +94,32 @@ const Projects = () => {
                         />
                       </a>
                     </div>
-                    <div className="btnss">
-                      <a
-                        href={item.code}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="rightbb"
-                      >
-                        <span>Code</span>
-                        <img src={github} alt="" loading="lazy" />
-                      </a>
-                    </div>
+
+                    {item.code ? (
+                      <div className="btnss">
+                        <a
+                          href={item.code}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="rightbb"
+                        >
+                          <span>Code</span>
+                          <img src={github} alt="" loading="lazy" />
+                        </a>
+                      </div>
+                    ) : (
+                      <div className="btnss">
+                        <a
+                          href={item.code}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="rightbb"
+                        >
+                          <span>Private Repository</span>
+                          <img src={github} alt="" loading="lazy" />
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

@@ -9,6 +9,7 @@ import project8 from "../../Images/fooddel.png";
 import project9 from "../../Images/ontheway.gif";
 import project10 from "../../Images/PEKISA.png";
 import project11 from "../../Images/Eshop.png";
+import project12 from "../../Images/nsfadminportal.png";
 
 export const projectdata = [
   {
@@ -160,6 +161,19 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/Eshop-TailwindCSS-Project",
     livedemo: true,
     live: "https://eshop-ecru-two.vercel.app/",
+    hover: true,
+  },
+  {
+    id: 12,
+    projectpicture: project12,
+    projectname: "NSF Admin Portal | A fullstack project. 🚀",
+    projectdesc:
+      "This is a paid freelance project. I have worked on this website using NextJS15, JavaScript, Framer Motion, Tailwindcss, MongoDB and applied the best practices using ReactJS.",
+    projectlanguage1: "NextJS",
+    projectlanguage2: "MongoDB",
+    rowreverse: true,
+    livedemo: true,
+    live: "https://nsf-admin-portal.vercel.app/",
     hover: true,
   },
 ];
