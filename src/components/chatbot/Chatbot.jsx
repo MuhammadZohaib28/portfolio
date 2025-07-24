@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import "./chatbot.scss";
+import chatBotPic from "../../Images/zohaib's picture.png";
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -180,9 +181,39 @@ const Chatbot = () => {
           <div>
             <p>You can contact Muhammad through:</p>
             <br />
-            <p>📧 Email: <a href="mailto:zohaibsoomro0101@gmail.com" target="_blank" rel="noopener noreferrer" style={{color: '#075E54', textDecoration: 'underline'}}>zohaibsoomro0101@gmail.com</a></p>
-            <p>💼 LinkedIn: <a href="https://linkedin.com/in/muhammad-zohaib" target="_blank" rel="noopener noreferrer" style={{color: '#075E54', textDecoration: 'underline'}}>Professional profile</a></p>
-            <p>📱 WhatsApp: <a href="https://wa.me/923482469101?text=Hi%20Muhammad!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" style={{color: '#075E54', textDecoration: 'underline'}}>Direct messaging</a></p>
+            <p>
+              📧 Email:{" "}
+              <a
+                href="mailto:zohaibsoomro0101@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#075E54", textDecoration: "underline" }}
+              >
+                zohaibsoomro0101@gmail.com
+              </a>
+            </p>
+            <p>
+              💼 LinkedIn:{" "}
+              <a
+                href="https://linkedin.com/in/muhammad-zohaib"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#075E54", textDecoration: "underline" }}
+              >
+                Professional profile
+              </a>
+            </p>
+            <p>
+              📱 WhatsApp:{" "}
+              <a
+                href="https://wa.me/923482469101?text=Hi%20Muhammad!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#075E54", textDecoration: "underline" }}
+              >
+                Direct messaging
+              </a>
+            </p>
             <p>📝 Contact Form: On this website</p>
             <br />
             <p>He typically responds within 24 hours!</p>
@@ -251,15 +282,12 @@ const Chatbot = () => {
           <div className="chat-header">
             <div className="chat-header-info">
               <div className="avatar">
-                <img
-                  src="/src/Images/zohaib's picture.png"
-                  alt="Muhammad Zohaib"
-                />
+                <img src={chatBotPic} alt="Muhammad Zohaib" />
                 <div className="status-dot"></div>
               </div>
               <div className="header-text">
                 <h4>Muhammad Zohaib</h4>
-                <span>AI Assistant • Online</span>
+                <span>AI Assistant </span>
               </div>
             </div>
             <div className="chat-actions">
