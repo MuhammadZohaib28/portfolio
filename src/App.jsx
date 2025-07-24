@@ -11,6 +11,7 @@ import GithubStats from "./components/githubstats/GithubStats";
 import Banner from "./components/banner/Banner";
 import JobSection from "./components/jobsection/JobSection";
 import Freelance from "./components/freelance/Freelance";
+import Chatbot from "./components/chatbot/Chatbot";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -32,6 +33,7 @@ const App = () => {
         <GithubStats />
         <Contact />
         <Footer />
+        <Chatbot />
       </div>
     </div>
   );
