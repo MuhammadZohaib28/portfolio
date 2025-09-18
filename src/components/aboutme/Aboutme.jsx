@@ -15,16 +15,17 @@ const Aboutme = () => {
           </div>
           <div className="mid">
             <h2>
-              A dedicated Front-end Developer based in Karachi, Pakistan. 📍
+              A dedicated Full Stack Developer based in Karachi, Pakistan. 📍
             </h2>
           </div>
           <div className="bottom">
             <p>
-              As a Junior Front-End Developer, I possess an impressive arsenal
+              As a Junior Full Stack Developer, I possess an impressive arsenal
               of skills in <span className="pspan">HTML5</span> ,{" "}
               <span className="pspan">CSS3</span>,{" "}
               <span className="pspan">JavaScript</span>,{" "}
               <span className="pspan">ReactJS</span> along with <span className="pspan">NextJS</span> ,{" "}
+              <span className="pspan">MongoDb</span> along with <span className="pspan">NextJS</span> ,{" "}
               <span className="pspan">Tailwind</span>, and{" "}
               <span className="pspan">SCSS/SASS</span>. I excel in designing and
               maintaining <span className="pspan">responsive websites</span>{" "}

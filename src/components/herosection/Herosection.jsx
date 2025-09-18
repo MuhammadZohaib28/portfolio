@@ -12,7 +12,7 @@ const Herosection = () => {
         <div className="left">
           <div className="designation">
             <h1>
-              Front-End React Developer
+              Full Stack NextJS Developer
               <span>
                 <img src={hand} alt="" />
               </span>
@@ -22,7 +22,7 @@ const Herosection = () => {
             <p>
               Hi, I'm{" "}
               <span className="name animate-charcter">Muhammad Zohaib</span>. A
-              passionate Front-end React Developer based in Karachi, Pakistan.
+              passionate Full Stack NextJS | MERN Stack | ReactJS Developer based in Karachi, Pakistan.
               📍
             </p>
           </div>

@@ -51,15 +51,19 @@ const Navbar = (props) => {
         offset={-70}
         duration={20}
         onClick={closeMenu}
+        style={{ display: "flex" }}
       >
         <div className="afp">
           <span className="dot" />
-          <span>Available for projects</span>
+          <span>Available for Remote Work</span>
         </div>
       </ScrollLink>
 
       <div className="forkandmenu">
-        <button onClick={handleDownloadCVClick} className="resumebutton"> Resume</button>
+        <button onClick={handleDownloadCVClick} className="resumebutton">
+          {" "}
+          Resume
+        </button>
         <div className="responsivemenu" onClick={handleClick}>
           {!click ? (
             <img src={bars} alt="" className="menu" />

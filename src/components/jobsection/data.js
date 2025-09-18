@@ -1,6 +1,7 @@
 import job1 from "../../Images/miletap.webp";
 import job2 from "../../Images/NSF.png";
 import job3 from "../../Images/hatchpakss.png";
+import job4 from "../../Images/NSFLOGO.png";
 
 const getDaysWorked = (startDate) => {
   const currentDate = new Date();
@@ -47,10 +48,13 @@ const monthsWorked = getMonthsDifference(startDate);
 
 const startDateNSF = new Date("2024-06-03"); // Start date for Nayee Subah Foundation
 const startDateHatchPak = new Date("2025-05-14"); // Start date for Nayee Subah Foundation
+const startDateTaleemPortal = new Date("2025-02-14"); // Start date for Nayee Subah Foundation
 const daysWorkedNSF = getDaysWorked(startDateNSF);
 const daysWorkedHatchPak = getDaysWorked(startDateHatchPak);
+const daysWorkedTaleemPortal = getDaysWorked(startDateTaleemPortal);
 const monthsWorkedNSF = getMonthsDifference(startDateNSF);
 const monthsWorkedHatchPak = getMonthsDifference(startDateHatchPak);
+const monthsWorkedTaleemPortal = getMonthsDifference(startDateTaleemPortal);
 
 // Now you can update the `projectdata` dynamically
 export const projectdata = [
@@ -100,6 +104,22 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/React-Portfolio-Website",
     live: "https://muhammadzohaibportfolio.vercel.app/",
     rowreverse: false,
+    livedemo: true,
+    hover: true,
+    live: true,
+  },
+  {
+    id: 4,
+    projectpicture: job4,
+    projectname: "Taleem Portal",
+    projectdesc:
+      "I am working at Taleem Portal as a Founder. It is a startup in which I provide complete school management solution with comprehensive student tracking, teacher management, fee collection, and real-time analytics.",
+    projectlanguage1: "Founder",
+    projectlanguage2: `${monthsWorkedTaleemPortal}+ months`, // Updated months
+    daysWorked: `${daysWorkedTaleemPortal} days`, // Total days worked excluding weekends
+    // code: "https://github.com/MuhammadZohaib28/React-Portfolio-Website",
+    live: "https://taleeemportal.online/",
+    rowreverse: true,
     livedemo: true,
     hover: true,
     live: true,
