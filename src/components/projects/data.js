@@ -9,7 +9,8 @@ import project8 from "../../Images/fooddel.png";
 import project9 from "../../Images/ontheway.gif";
 import project10 from "../../Images/PEKISA.png";
 import project11 from "../../Images/Eshop.png";
-import project12 from "../../Images/nsfadminportal.png";
+import project12 from "../../Images/nsfimage.png";
+import project13 from "../../Images/dubai.png";
 
 export const projectdata = [
   {
@@ -25,6 +26,7 @@ export const projectdata = [
     rowreverse: false,
     livedemo: true,
     hover: true,
+    tags: ["reactjs", "frontend"],
   },
   {
     id: 2,
@@ -38,6 +40,7 @@ export const projectdata = [
     livedemo: false,
     code: "https://github.com/MuhammadZohaib28/Fiverr-Clone-ReactJS-Frontend-Part-",
     hover: true,
+    tags: ["reactjs", "frontend"],
   },
   {
     id: 3,
@@ -51,6 +54,7 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/CryptoPriceApp",
     livedemo: false,
     hover: true,
+    tags: ["reactjs", "frontend"],
   },
   {
     id: 4,
@@ -65,6 +69,7 @@ export const projectdata = [
     live: "https://funnyexcusegenerator.vercel.app/",
     livedemo: true,
     hover: true,
+    tags: ["reactjs", "frontend"],
   },
   {
     id: 5,
@@ -78,6 +83,7 @@ export const projectdata = [
     code: "https://github.com/MuhammadZohaib28/Clothing-Store-Frontend",
     livedemo: false,
     hover: true,
+    tags: ["reactjs", "frontend"],
   },
   {
     id: 6,
@@ -92,6 +98,7 @@ export const projectdata = [
     livedemo: true,
     live: "https://countrydata-smoky.vercel.app/",
     hover: true,
+    tags: ["reactjs", "frontend"],
   },
   {
     id: 7,
@@ -106,6 +113,7 @@ export const projectdata = [
     livedemo: true,
     live: "https://figmatoreact.vercel.app/",
     hover: true,
+    tags: ["reactjs", "frontend"],
   },
   {
     id: 8,
@@ -120,6 +128,7 @@ export const projectdata = [
     livedemo: true,
     live: "https://fooddeliveryapp-omega.vercel.app/",
     hover: true,
+    tags: ["nextjs", "reactjs", "frontend"],
   },
   {
     id: 9,
@@ -134,6 +143,7 @@ export const projectdata = [
     livedemo: true,
     live: "https://ontheway.store/",
     hover: false,
+    tags: ["reactjs", "frontend"],
   },
   {
     id: 10,
@@ -148,6 +158,7 @@ export const projectdata = [
     livedemo: true,
     live: "https://pekisa.vercel.app/",
     hover: true,
+    tags: ["reactjs", "frontend"],
   },
   {
     id: 11,
@@ -162,6 +173,7 @@ export const projectdata = [
     livedemo: true,
     live: "https://eshop-ecru-two.vercel.app/",
     hover: true,
+    tags: ["reactjs", "frontend"],
   },
   {
     id: 12,
@@ -173,7 +185,22 @@ export const projectdata = [
     projectlanguage2: "MongoDB",
     rowreverse: true,
     livedemo: true,
-    live: "https://nsf-admin-portal.vercel.app/",
+    live: "https:portal.nayeesubahfoundation.org/",
     hover: true,
+    tags: ["nextjs", "reactjs", "mongodb", "fullstack"],
+  },
+    {
+    id: 13,
+    projectpicture: project13,
+    projectname: "Dubai Driffters | A fullstack project. 🚀",
+    projectdesc:
+      "This is a paid freelance project. I have worked on this website using VanillaJS, Tailwindcss, MongoDB and applied the best practices using ReactJS.",
+    projectlanguage1: "VanillaJS",
+    projectlanguage2: "MongoDB",
+    rowreverse: false,
+    livedemo: true,
+    live: "https://www.dubaidrifters.com/",
+    hover: true,
+    tags: ["mongodb", "fullstack"],
   },
 ];

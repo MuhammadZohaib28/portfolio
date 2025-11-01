@@ -27,6 +27,40 @@
       }
     }
 
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      justify-content: center;
+      align-items: center;
+
+      .filter-btn {
+        padding: 0.6rem 1.5rem;
+        background-color: white;
+        border: 2px solid seagreen;
+        color: seagreen;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: all ease 0.3s;
+
+        &:hover {
+          background-color: seagreen;
+          color: white;
+          transform: translateY(-2px);
+          box-shadow: rgba(46, 139, 87, 0.3) 0px 4px 12px;
+        }
+
+        &.active {
+          background-color: seagreen;
+          color: white;
+          box-shadow: rgba(46, 139, 87, 0.4) 0px 4px 16px;
+        }
+      }
+    }
+
     .bottom {
       .containerb {
         // border: 1px solid red;
@@ -261,6 +295,25 @@
         color: whitesmoke;
         font-size: 1.9rem;
         transition: all ease 0.7s;
+      }
+    }
+
+    .filters {
+      .filter-btn {
+        background-color: rgb(13, 13, 13);
+        border: 2px solid seagreen;
+        color: seagreen;
+        transition: all ease 0.3s;
+
+        &:hover {
+          background-color: seagreen;
+          color: white;
+        }
+
+        &.active {
+          background-color: seagreen;
+          color: white;
+        }
       }
     }
 
@@ -830,6 +883,16 @@
         h2 {
           color: #2d2e32;
           font-size: 1.2rem;
+        }
+      }
+
+      .filters {
+        gap: 0.7rem;
+        margin-bottom: 2rem;
+
+        .filter-btn {
+          padding: 0.5rem 1rem;
+          font-size: 0.9rem;
         }
       }
 

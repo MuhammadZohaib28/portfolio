@@ -6,6 +6,7 @@ import { projectdata } from "./data";
 
 const Projects = () => {
   const [touch, setTouch] = useState(false);
+  const [activeFilter, setActiveFilter] = useState("all");
 
   useEffect(() => {
     updateTouchState(); // Initial check
@@ -24,6 +25,22 @@ const Projects = () => {
       setTouch(false);
     }
   };
+
+  const filterButtons = [
+    { id: "all", label: "All" },
+    { id: "fullstack", label: "Full Stack" },
+    { id: "mongodb", label: "MongoDB" },
+    { id: "frontend", label: "Frontend" },
+    { id: "nextjs", label: "Next.js" },
+    { id: "reactjs", label: "React.js" },
+  ];
+
+  const filteredProjects =
+    activeFilter === "all"
+      ? projectdata
+      : projectdata.filter((project) =>
+          project.tags?.includes(activeFilter)
+        );
   return (
     <div className="projects">
       <div className="container">
@@ -32,7 +49,19 @@ const Projects = () => {
           <h2>Each project is a unique piece of development 🧩</h2>
         </div>
 
-        {[...projectdata]
+        <div className="filters">
+          {filterButtons.map((button) => (
+            <button
+              key={button.id}
+              className={`filter-btn ${activeFilter === button.id ? "active" : ""}`}
+              onClick={() => setActiveFilter(button.id)}
+            >
+              {button.label}
+            </button>
+          ))}
+        </div>
+
+        {[...filteredProjects]
           .sort((a, b) => b.id - a.id)
           .map((item) => {
             return (
