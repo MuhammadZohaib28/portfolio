@@ -35,7 +35,7 @@ const Chatbot = () => {
       message.includes("work") ||
       message.includes("projects")
     ) {
-      return "I'd be happy to tell you about Muhammad's portfolio! He's a skilled Front-End React Developer with experience in modern web technologies. You can check out his projects section to see his latest work including e-commerce sites, web applications, and more. Would you like to know about any specific project?";
+      return "I'd be happy to tell you about Zohaib's portfolio! He's a skilled Front-End React Developer with experience in modern web technologies. You can check out his projects section to see his latest work including e-commerce sites, web applications, and more. Would you like to know about any specific project?";
     }
 
     // Skills related questions
@@ -92,7 +92,7 @@ const Chatbot = () => {
       message.includes("rate") ||
       message.includes("budget")
     ) {
-      return "Muhammad's rates are competitive and depend on the project scope, complexity, and timeline. He offers:\n• Hourly rates for smaller tasks\n• Fixed pricing for complete projects\n• Custom packages for ongoing work\n\nFor a detailed quote, please contact him directly with your project requirements!";
+      return "Zohaib's rates are competitive and depend on the project scope, complexity, and timeline. He offers:\n• Hourly rates for smaller tasks\n• Fixed pricing for complete projects\n• Custom packages for ongoing work\n\nFor a detailed quote, please contact him directly with your project requirements!";
     }
 
     // Timeline related questions
@@ -125,7 +125,7 @@ const Chatbot = () => {
 
     // Thank you responses
     if (message.includes("thank") || message.includes("thanks")) {
-      return "You're very welcome! If you have any other questions about Muhammad's work or want to get in touch with him, feel free to ask. I'm here to help! 😊";
+      return "You're very welcome! If you have any other questions about Zohaib's work or want to get in touch with him, feel free to ask. I'm here to help! 😊";
     }
 
     // Default responses
@@ -174,7 +174,7 @@ const Chatbot = () => {
     switch (action) {
       case "projects":
         responseText =
-          "Here are Muhammad's featured projects:\n\n1. E-commerce Platform - React & Node.js\n2. Portfolio Website - React & SCSS\n3. Task Management App - React & MongoDB\n4. Restaurant Website - HTML5, CSS3, JS\n\nWould you like to know more about any specific project?";
+          "Here are Zohaib's featured projects:\n\n1. E-commerce Platform - React & Node.js\n2. Portfolio Website - React & SCSS\n3. Task Management App - React & MongoDB\n4. Restaurant Website - HTML5, CSS3, JS\n\nWould you like to know more about any specific project?";
         break;
       case "contact":
         responseText = (
@@ -206,7 +206,7 @@ const Chatbot = () => {
             <p>
               📱 WhatsApp:{" "}
               <a
-                href="https://wa.me/923482469101?text=Hi%20Muhammad!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+                href="https://wa.me/923482469101?text=Hi%20Zohaib!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#075E54", textDecoration: "underline" }}
@@ -226,7 +226,7 @@ const Chatbot = () => {
         break;
       case "whatsapp":
         window.open(
-          "https://wa.me/923482469101?text=Hi%20Muhammad!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
+          "https://wa.me/923482469101?text=Hi%20Zohaib!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
           "_blank"
         );
         responseText =
@@ -348,7 +348,7 @@ const Chatbot = () => {
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
               onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
-              placeholder="Ask me anything about Muhammad's work..."
+              placeholder="Ask me anything about Zohaib's work..."
               disabled={isTyping}
             />
             <button
