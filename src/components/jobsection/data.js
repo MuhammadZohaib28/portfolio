@@ -2,6 +2,7 @@ import job1 from "../../Images/miletap.webp";
 import job2 from "../../Images/NSF.png";
 import job3 from "../../Images/hatchpakss.png";
 import job4 from "../../Images/NSFLOGO.png";
+import job5 from "../../Images/smarthcm.webp";
 
 const getDaysWorked = (startDate) => {
   const currentDate = new Date();
@@ -49,12 +50,17 @@ const monthsWorked = getMonthsDifference(startDate);
 const startDateNSF = new Date("2024-06-03"); // Start date for Nayee Subah Foundation
 const startDateHatchPak = new Date("2025-05-14"); // Start date for Nayee Subah Foundation
 const startDateTaleemPortal = new Date("2025-02-14"); // Start date for Nayee Subah Foundation
+
+const startDateSmartHCM = new Date("2025-12-01"); // Start date for Nayee Subah Foundation
 const daysWorkedNSF = getDaysWorked(startDateNSF);
 const daysWorkedHatchPak = getDaysWorked(startDateHatchPak);
 const daysWorkedTaleemPortal = getDaysWorked(startDateTaleemPortal);
+
+const daysWorkedAtSmartHCM = getDaysWorked(startDateSmartHCM);
 const monthsWorkedNSF = getMonthsDifference(startDateNSF);
 const monthsWorkedHatchPak = getMonthsDifference(startDateHatchPak);
 const monthsWorkedTaleemPortal = getMonthsDifference(startDateTaleemPortal);
+const monthsWorkedAtSmartHCM = getMonthsDifference(startDateSmartHCM);
 
 // Now you can update the `projectdata` dynamically
 export const projectdata = [
@@ -101,12 +107,11 @@ export const projectdata = [
     projectlanguage1: "Co-Founder",
     projectlanguage2: `${monthsWorkedHatchPak}+ months`, // Updated months
     daysWorked: `${daysWorkedHatchPak} days`, // Total days worked excluding weekends
-    code: "https://github.com/MuhammadZohaib28/React-Portfolio-Website",
-    live: "https://muhammadzohaibportfolio.vercel.app/",
+
     rowreverse: false,
-    livedemo: true,
-    hover: true,
-    live: true,
+
+    live: false,
+    leftDate: "14th September, 2025",
   },
   {
     id: 4,
@@ -120,6 +125,22 @@ export const projectdata = [
     // code: "https://github.com/MuhammadZohaib28/React-Portfolio-Website",
     live: "https://taleeemportal.online/",
     rowreverse: true,
+    livedemo: true,
+    hover: true,
+    live: true,
+  },
+  {
+    id: 5,
+    projectpicture: job5,
+    projectname: "SmartHCM",
+    projectdesc:
+      "I am working at SmartHCM as a Software Developer. I work there using the techstack .NET Core, C#, and SQL Server. Right now I am working on the revamping of there SmartHCM ESS portal to NextJS",
+    projectlanguage1: "Software Developer",
+    projectlanguage2: `${monthsWorkedAtSmartHCM}+ months`, // Updated months
+    daysWorked: `${daysWorkedAtSmartHCM} days`, // Total days worked excluding weekends
+    // code: "https://github.com/MuhammadZohaib28/React-Portfolio-Website",
+    live: "https://taleeemportal.online/",
+    rowreverse: false,
     livedemo: true,
     hover: true,
     live: true,
