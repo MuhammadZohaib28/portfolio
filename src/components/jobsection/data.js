@@ -3,6 +3,7 @@ import job2 from "../../Images/NSF.png";
 import job3 from "../../Images/hatchpakss.png";
 import job4 from "../../Images/NSFLOGO.png";
 import job5 from "../../Images/smarthcm.webp";
+import job6 from "../../Images/smaashlabs.png";
 
 const getDaysWorked = (startDate) => {
   const currentDate = new Date();
@@ -52,15 +53,18 @@ const startDateHatchPak = new Date("2025-05-14"); // Start date for Nayee Subah 
 const startDateTaleemPortal = new Date("2025-02-14"); // Start date for Nayee Subah Foundation
 
 const startDateSmartHCM = new Date("2025-12-01"); // Start date for Nayee Subah Foundation
+const startDateSmaashLabs = new Date("2026-01-04"); // Start date for Nayee Subah Foundation
 const daysWorkedNSF = getDaysWorked(startDateNSF);
 const daysWorkedHatchPak = getDaysWorked(startDateHatchPak);
 const daysWorkedTaleemPortal = getDaysWorked(startDateTaleemPortal);
 
 const daysWorkedAtSmartHCM = getDaysWorked(startDateSmartHCM);
+const daysWorkedAtSmaashLabs = getDaysWorked(startDateSmaashLabs);
 const monthsWorkedNSF = getMonthsDifference(startDateNSF);
 const monthsWorkedHatchPak = getMonthsDifference(startDateHatchPak);
 const monthsWorkedTaleemPortal = getMonthsDifference(startDateTaleemPortal);
 const monthsWorkedAtSmartHCM = getMonthsDifference(startDateSmartHCM);
+const monthsWorkedAtSmaashLabs = getMonthsDifference(startDateSmaashLabs);
 
 // Now you can update the `projectdata` dynamically
 export const projectdata = [
@@ -143,6 +147,23 @@ export const projectdata = [
     rowreverse: false,
     livedemo: true,
     hover: true,
+    live: false,
+  },
+    {
+    id: 6,
+    projectpicture: job6,
+    projectname: "Smaash Labs LLC (Remote)",
+    projectdesc:
+      "I am working at Smaash Labs LLC as a Full Stack Developer. I work there using the techstack MERN, Blockchain, Solana, Rust. I am involved in developing decentralized applications and smart contracts on the Solana blockchain.",
+    projectlanguage1: "Full Stack Developer",
+    projectlanguage2: `${monthsWorkedAtSmaashLabs}+ months`, // Updated months
+    daysWorked: `${daysWorkedAtSmaashLabs} days`, // Total days worked excluding weekends
+    // code: "https://github.com/MuhammadZohaib28/React-Portfolio-Website",
+    live: "https://taleeemportal.online/",
+    rowreverse: true,
+    livedemo: true, 
+    hover: true,
     live: true,
+    companyEmail: "muhammad.zohaib@e.smaashlab.io",
   },
 ];
