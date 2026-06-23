@@ -212,7 +212,7 @@ export const projectdata = [
       "A modern, premium, and fully responsive architecture firm website built with Next.js. The website features a clean white theme, smooth animations, parallax effects, project showcase pages, service detail pages, and a luxury editorial-style design tailored for an architectural studio.",
     projectlanguage1: "Next.js",
     projectlanguage2: "Tailwind CSS",
-    rowreverse: false,
+    rowreverse: true,
     livedemo: true,
     live: "https://kensingtondesignhouse.vercel.app/",
     hover: true,
