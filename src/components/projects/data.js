@@ -11,6 +11,7 @@ import project10 from "../../Images/PEKISA.png";
 import project11 from "../../Images/Eshop.png";
 import project12 from "../../Images/nsfimage.png";
 import project13 from "../../Images/dubai.png";
+import project14 from "../../Images/architecture.png";
 
 export const projectdata = [
   {
@@ -189,7 +190,7 @@ export const projectdata = [
     hover: true,
     tags: ["nextjs", "reactjs", "mongodb", "fullstack"],
   },
-    {
+  {
     id: 13,
     projectpicture: project13,
     projectname: "Dubai Driffters | A fullstack project. 🚀",
@@ -202,5 +203,19 @@ export const projectdata = [
     live: "https://www.dubaidrifters.com/",
     hover: true,
     tags: ["mongodb", "fullstack"],
+  },
+  {
+    id: 14,
+    projectpicture: project14,
+    projectname: "Atelier North | Premium Architecture Studio Website",
+    projectdesc:
+      "A modern, premium, and fully responsive architecture firm website built with Next.js. The website features a clean white theme, smooth animations, parallax effects, project showcase pages, service detail pages, and a luxury editorial-style design tailored for an architectural studio.",
+    projectlanguage1: "Next.js",
+    projectlanguage2: "Tailwind CSS",
+    rowreverse: false,
+    livedemo: true,
+    live: "https://kensingtondesignhouse.vercel.app/",
+    hover: true,
+    tags: ["nextjs", "architecture", "framer-motion", "tailwindcss"],
   },
 ];
